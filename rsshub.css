@@ -1,0 +1,51 @@
+.rss-page { padding-top: 92px; padding-bottom: 130px; }
+.rss-intro { max-width: 920px; }
+.rss-intro h1 { margin-top: 28px; font: 600 clamp(60px, 7.2vw, 110px)/1.17 var(--serif); letter-spacing: -.055em; }
+.rss-intro h1 span { color: var(--red); }
+.rss-intro > p { max-width: 700px; margin-top: 26px; color: #514b46; font-size: 17px; line-height: 1.9; }
+.rss-grid { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 10%; margin-top: 80px; }
+.rss-builder { border-top: 1px solid var(--line); }
+.rss-step { display: grid; grid-template-columns: 90px 1fr; gap: 20px; padding: 34px 0; border-bottom: 1px solid var(--line); }
+.rss-step > span { color: var(--red); font-size: 13px; font-weight: 700; letter-spacing: .12em; }
+.rss-step h2, .rss-help h2 { font: 600 29px/1.3 var(--serif); }
+.rss-step p, .rss-help p { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.rss-step a, .rss-help a { display: inline-block; margin-top: 16px; border-bottom: 1px solid currentColor; padding-bottom: 4px; color: var(--red); font-size: 14px; font-weight: 700; }
+.rss-step code { font-size: 12px; overflow-wrap: anywhere; }
+.rss-form { padding-top: 35px; }
+.rss-form label, .rss-result label { display: block; margin-bottom: 12px; font-size: 13px; font-weight: 700; }
+.rss-input-row { display: grid; grid-template-columns: minmax(0, 1fr) 170px; }
+.rss-input-row input, .rss-result input { min-width: 0; width: 100%; border: 1px solid var(--ink); border-radius: 0; padding: 17px 18px; background: var(--white); color: var(--ink); font: 14px/1.5 ui-monospace, Consolas, monospace; }
+.rss-input-row button, .rss-actions button { display: flex; justify-content: space-between; gap: 10px; align-items: center; border: 1px solid var(--red); padding: 17px 20px; background: var(--red); color: white; cursor: pointer; font-size: 14px; font-weight: 700; }
+.rss-input-row button:hover, .rss-actions button:hover { background: #b72430; border-color: #b72430; }
+.rss-status { min-height: 1.8em; margin-top: 12px; color: var(--muted); font-size: 13px; }
+.rss-result { margin-top: 25px; padding: 30px; background: #f6eded; border: 1px solid #e6d4d3; }
+.rss-result[hidden] { display: none; }
+.rss-result label { margin-top: 16px; }
+.rss-result input { background: white; border-color: #d9c4c3; }
+.rss-actions { display: flex; align-items: center; gap: 22px; margin-top: 17px; }
+.rss-actions button { padding: 12px 17px; }
+.rss-actions a { color: var(--red); font-size: 14px; font-weight: 700; }
+.rss-result p { margin-top: 15px; color: var(--muted); font-size: 12px; }
+.rss-help { align-self: start; padding: 30px; background: #eee8e2; }
+.rss-help h2 { margin-top: 23px; }
+.rss-help p + p { margin-top: 18px; }
+.rss-help a { margin-top: 24px; }
+.rss-page + .site-footer { border-top: 1px solid var(--line); }
+.rss-back { margin-left: auto; }
+
+@media (max-width: 900px) {
+  .rss-grid { grid-template-columns: 1fr; gap: 45px; }
+  .rss-help { max-width: 620px; }
+}
+
+@media (max-width: 700px) {
+  .rss-page { padding-top: 64px; padding-bottom: 85px; }
+  .rss-intro h1 { font-size: clamp(48px, 10.5vw, 70px); }
+  .rss-intro > p { font-size: 14px; }
+  .rss-grid { margin-top: 50px; }
+  .rss-step { grid-template-columns: 45px 1fr; gap: 12px; }
+  .rss-step h2 { font-size: 25px; }
+  .rss-input-row { grid-template-columns: 1fr; gap: 10px; }
+  .rss-result { padding: 20px; }
+  .rss-actions { flex-wrap: wrap; }
+}

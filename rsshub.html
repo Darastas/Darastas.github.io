@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f9f7f3" />
+    <meta name="description" content="使用 FocusFeed 的 RSSHub 服务，根据路由路径生成 RSS 订阅源地址。" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/rsshub.css" />
+    <title>生成 RSS 订阅源 — FocusFeed</title>
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9546e21fcf8f47b49c0870938b58e6d5"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转到正文</a>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href="/" aria-label="返回 FocusFeed 官网">
+          <img src="/favicon.svg" alt="" width="32" height="32" />
+          <span>FocusFeed</span>
+        </a>
+        <a class="header-download" href="/">返回官网 <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main" class="rss-page wrap">
+      <div class="rss-intro">
+        <span class="section-number">RSSHUB / FEED BUILDER</span>
+        <h1>想读的内容，<br /><span>自己订阅。</span></h1>
+        <p>找到 RSSHub 支持的路由，填入路径，即可生成订阅地址。生成后复制到 FocusFeed 的「添加订阅」。</p>
+      </div>
+
+      <div class="rss-grid">
+        <div class="rss-builder">
+          <div class="rss-step"><span>01</span><div><h2>找到路由</h2><p>在 RSSHub 路由目录中选择网站，并复制示例路径。</p><a href="https://docs.rsshub.app/routes/" target="_blank" rel="noopener noreferrer">浏览 RSSHub 路由目录 ↗</a></div></div>
+          <div class="rss-step"><span>02</span><div><h2>填写路径</h2><p>例如 <code>/github/issue/DIYgod/RSSHub/open</code>。也可以粘贴 RSSHub 官方示例的完整链接。</p></div></div>
+          <form id="rss-form" class="rss-form" data-base="https://focusfeed-rsshub.pages.dev">
+            <label for="rss-path">RSSHub 路由路径</label>
+            <div class="rss-input-row">
+              <input id="rss-path" name="path" type="text" inputmode="url" autocomplete="off" spellcheck="false" placeholder="/github/issue/DIYgod/RSSHub/open" required />
+              <button type="submit">生成地址 <span aria-hidden="true">↗</span></button>
+            </div>
+            <p id="rss-status" class="rss-status" role="status" aria-live="polite"></p>
+          </form>
+          <div id="rss-result" class="rss-result" hidden>
+            <span class="section-number">YOUR FEED URL</span>
+            <label for="rss-url">订阅地址</label>
+            <input id="rss-url" type="text" readonly />
+            <div class="rss-actions">
+              <button id="rss-copy" type="button">复制地址</button>
+              <a id="rss-open" href="#" target="_blank" rel="noopener noreferrer">打开检查 ↗</a>
+            </div>
+            <p>复制后，在 FocusFeed 中添加订阅即可。</p>
+          </div>
+        </div>
+        <aside class="rss-help">
+          <span class="section-number">使用说明</span>
+          <h2>关于这项服务</h2>
+          <p>RSSHub 只能生成已有路由支持的内容。部分路由需要账号信息或浏览器渲染，当前公共实例可能无法使用。</p>
+          <p>公开服务设置了请求限流。若打开地址时提示失败，请稍后重试，或到路由目录确认参数。</p>
+          <a href="https://focusfeed-rsshub.pages.dev/" target="_blank" rel="noopener noreferrer">打开 RSSHub 主页 ↗</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer wrap">
+      <div class="footer-brand"><img src="/favicon.svg" alt="" width="28" height="28" /><span>FocusFeed</span></div>
+      <p>把注意力还给阅读。</p>
+      <a href="/">返回官网 ↑</a>
+    </footer>
+    <script type="module" src="/rsshub.js"></script>
+  </body>
+</html>

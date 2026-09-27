@@ -95,6 +95,11 @@ figure, h1, h2, h3, p { margin: 0; }
 .demo-caption strong { font-family: var(--serif); font-size: 23px; }
 .demo-caption p { color: var(--muted); font-size: 13px; line-height: 1.7; }
 
+.rsshub-promo { display: grid; grid-template-columns: 140px minmax(0, 1fr) auto; gap: 35px; align-items: center; padding-top: 60px; padding-bottom: 95px; border-top: 1px solid var(--line); }
+.rsshub-promo h2 { font: 600 clamp(33px, 3.6vw, 56px)/1.35 var(--serif); letter-spacing: -.04em; }
+.rsshub-promo p { max-width: 650px; margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.rsshub-promo .primary-link { margin-top: 0; white-space: nowrap; }
+
 .download-section { background: var(--ink); color: white; padding: 116px 0 92px; }
 .download-header { display: grid; grid-template-columns: 140px minmax(0, 1fr) 290px; gap: 35px; align-items: end; padding-bottom: 43px; }
 .download-header .section-number { color: #fb747e; }
@@ -128,6 +133,8 @@ figure, h1, h2, h3, p { margin: 0; }
   .feature-copy p { grid-column: 2; max-width: 500px; }
   .ai-facts p { grid-template-columns: 1fr; gap: 6px; }
   .download-item { grid-template-columns: minmax(0, 1fr) 150px 145px; }
+  .rsshub-promo { grid-template-columns: 110px minmax(0, 1fr); }
+  .rsshub-promo .primary-link { grid-column: 2; justify-self: start; }
 }
 
 @media (max-width: 700px) {
@@ -172,6 +179,9 @@ figure, h1, h2, h3, p { margin: 0; }
   .demo-caption strong { font-size: 20px; }
   .demo-caption p { margin-top: 6px; }
   .download-section { padding: 82px 0 65px; }
+  .rsshub-promo { display: block; padding-top: 50px; padding-bottom: 75px; }
+  .rsshub-promo h2 { margin-top: 22px; }
+  .rsshub-promo .primary-link { margin-top: 22px; }
   .download-item { grid-template-columns: minmax(0, 1fr) 122px; gap: 10px; min-height: 130px; padding: 21px 0; }
   .download-item h3 { font-size: 24px; }
   .download-item a { padding: 13px 12px; }
