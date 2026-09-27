@@ -99,6 +99,8 @@ figure, h1, h2, h3, p { margin: 0; }
 .download-header { display: grid; grid-template-columns: 140px minmax(0, 1fr) 290px; gap: 35px; align-items: end; padding-bottom: 43px; }
 .download-header .section-number { color: #fb747e; }
 .download-header p { color: #cbc4bd; font-size: 14px; line-height: 1.9; padding-bottom: 8px; }
+.download-pending { display: flex; justify-content: space-between; align-items: center; padding: 34px 0; border-top: 1px solid #5a5551; border-bottom: 1px solid #5a5551; color: #d6ceca; font-size: 18px; }
+.download-pending span { color: #f1858c; }
 .download-list { border-top: 1px solid #5a5551; }
 .download-item { display: grid; grid-template-columns: minmax(0, 1fr) 170px 220px; gap: 25px; align-items: center; min-height: 140px; padding: 25px 0; border-bottom: 1px solid #5a5551; }
 .download-system { color: #f1858c; font: 700 11px/1.4 var(--sans); letter-spacing: .14em; }
