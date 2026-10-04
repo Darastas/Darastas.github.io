@@ -7,6 +7,7 @@
     <meta name="description" content="使用 FocusFeed 的 RSSHub 服务，根据路由路径生成 RSS 订阅源地址。" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="alternate" type="application/rss+xml" title="FocusFeed 官方公告" href="https://darastas.github.io/announcements.xml" />
     <link rel="stylesheet" href="/rsshub.css" />
     <title>生成 RSS 订阅源 — FocusFeed</title>
     <!-- Cloudflare Web Analytics -->
@@ -21,6 +22,8 @@
           <img src="/favicon.svg" alt="" width="32" height="32" />
           <span>FocusFeed</span>
         </a>
+        <nav id="main-nav" class="main-nav" aria-label="主导航"><a href="/">官网</a><a href="/rsshub.html" aria-current="page">生成 RSS</a><a href="/announcements/">公告</a></nav>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">菜单</button>
         <a class="header-download" href="/">返回官网 <span aria-hidden="true">↗</span></a>
       </div>
     </header>
@@ -71,5 +74,6 @@
       <a href="/">返回官网 ↑</a>
     </footer>
     <script type="module" src="/rsshub.js"></script>
+    <script type="module" src="/navigation.js"></script>
   </body>
 </html>
