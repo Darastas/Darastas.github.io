@@ -17,7 +17,7 @@
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9546e21fcf8f47b49c0870938b58e6d5"}'></script>
     <!-- End Cloudflare Web Analytics -->
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#main">跳转到正文</a>
     <header class="site-header">
       <div class="header-inner wrap">
@@ -63,10 +63,15 @@
             <span class="feature-index">01—A</span>
             <h3>文章与电子书，<br />同一种专注。</h3>
             <p>在宽屏上展开双页阅读，留出恰到好处的文字空间。</p>
+            <ul class="feature-details">
+              <li>双页、翻页与滚动阅读，按你的习惯选择。</li>
+              <li>字号、行距和阅读宽度都可调整。</li>
+              <li>文章与电子书分开整理，使用同一套阅读工具。</li>
+            </ul>
           </div>
           <figure class="feature-visual">
             <img src="/assets/ebook.jpg" alt="FocusFeed 电子书双页阅读界面" width="1919" height="1079" loading="lazy" />
-            <figcaption>EPUB / 双页阅读</figcaption>
+            <figcaption><span>EPUB / 双页阅读</span><a href="/assets/ebook.jpg" target="_blank" rel="noopener" aria-label="查看电子书阅读界面大图">查看大图 ↗</a></figcaption>
           </figure>
         </div>
         <div class="feature-row feature-row-annotation">
@@ -74,10 +79,15 @@
             <span class="feature-index">01—B</span>
             <h3>留下值得<br />再读的一句。</h3>
             <p>高光与批注就在文章旁边。标记想法，不打断阅读。</p>
+            <ul class="feature-details">
+              <li>用高光、直线或波浪线，区分不同的阅读标记。</li>
+              <li>批注跟随选中文字保存，重读时能回到上下文。</li>
+              <li>直接在当前文章记录想法，不需要切换工具。</li>
+            </ul>
           </div>
           <figure class="feature-visual">
             <img src="/assets/annotations.jpg" alt="FocusFeed 的高光笔与批注面板" width="1185" height="667" loading="lazy" />
-            <figcaption>HIGHLIGHT / ANNOTATION</figcaption>
+            <figcaption><span>HIGHLIGHT / ANNOTATION</span><a href="/assets/annotations.jpg" target="_blank" rel="noopener" aria-label="查看高光批注界面大图">查看大图 ↗</a></figcaption>
           </figure>
         </div>
         <div class="platform-strip" aria-label="支持的界面形态">
@@ -91,15 +101,19 @@
           <div class="section-head ai-head">
             <span class="section-number">02 / UNDERSTAND</span>
             <h2 id="ai-title">让 AI 帮你理解，<br />由你决定怎么读。</h2>
-            <p>摘要、翻译、选中翻译与深度解读，出现在阅读需要它们的地方。</p>
+            <p>摘要、翻译、解读与朗读，出现在阅读需要它们的地方。</p>
           </div>
-          <figure class="ai-art">
-            <img src="/assets/ai-features.png" alt="FocusFeed 的摘要、深度解读、选中翻译和自定义 AI 设置界面" width="1672" height="941" loading="lazy" />
-          </figure>
-          <div class="ai-facts">
-            <p><strong>自己的 API</strong><span>添加你使用的 AI 服务，为不同功能选择模型。</span></p>
-            <p><strong>本地优先</strong><span>订阅与阅读记录保存在设备上；AI 请求发往你配置的服务。</span></p>
-            <p><strong>清楚掌控</strong><span>第三方模型费用由对应服务商收取，FocusFeed 不提供托管额度。</span></p>
+          <div class="ai-layout">
+            <div class="ai-facts">
+              <p><strong>自己的 API</strong><span>添加你使用的 AI 服务，为摘要、翻译等功能选择模型。</span></p>
+              <p><strong>听文章</strong><span>为朗读单独选择语音模型，听当前文章、章节或选中文字。</span></p>
+              <p><strong>本地优先</strong><span>订阅与阅读记录保存在设备上；AI 请求发往你配置的服务。</span></p>
+              <p><strong>清楚掌控</strong><span>第三方模型费用由对应服务商收取，FocusFeed 不提供托管额度。</span></p>
+            </div>
+            <figure class="ai-art">
+              <img src="/assets/ai-features.png" alt="FocusFeed 的摘要、深度解读、选中翻译和自定义 AI 设置界面" width="1672" height="941" loading="lazy" />
+              <figcaption><span>AI / 理解工具</span><a href="/assets/ai-features.png" target="_blank" rel="noopener" aria-label="查看 AI 功能界面大图">查看大图 ↗</a></figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -111,20 +125,22 @@
           <p>这些操作录屏直接来自 FocusFeed。选择一项，了解实际使用过程。</p>
         </div>
         <div class="demo-layout">
-          <div class="demo-tabs" role="tablist" aria-label="功能演示">
+          <div class="demo-nav">
+            <div class="demo-caption"><strong id="demo-caption-title">跨屏响应</strong><p id="demo-caption-description">从宽屏到紧凑窗口，阅读布局随空间变化。</p></div>
+            <div class="demo-tabs" role="tablist" aria-label="功能演示">
             <button type="button" class="demo-tab active" role="tab" aria-selected="true" aria-controls="demo-panel" id="demo-tab-responsive" data-video="responsive" data-title="跨屏响应" data-description="从宽屏到紧凑窗口，阅读布局随空间变化。"><span>01</span>跨屏响应</button>
             <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-motion" data-video="motion" data-title="流畅动画" data-description="在文章与阅读视图之间自然切换，让操作跟得上思路。"><span>02</span>流畅动画</button>
             <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-settings" data-video="reading-settings" data-title="阅读设置" data-description="文字、间距与阅读宽度，按你的习惯调整。"><span>03</span>阅读设置</button>
             <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-themes" data-video="themes" data-title="主题切换" data-description="明暗之间切换，让阅读适应不同环境。"><span>04</span>主题切换</button>
             <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-ai-summary" data-video="ai-summary" data-title="AI 摘要" data-description="快速提取长文核心，再决定是否深入阅读。"><span>05</span>AI 摘要</button>
             <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-byok" data-video="byok" data-title="AI 翻译" data-description="通过自己配置的模型，直接在文章中翻译。"><span>06</span>AI 翻译</button>
+            </div>
           </div>
           <div class="demo-screen" id="demo-panel" role="tabpanel" aria-labelledby="demo-tab-responsive" tabindex="0">
             <video id="demo-video" controls playsinline preload="none" poster="/assets/poster-responsive.jpg" aria-label="跨屏响应演示视频">
               <source src="/videos/responsive.mp4" type="video/mp4" />
               您的浏览器不支持视频播放。
             </video>
-            <div class="demo-caption"><strong id="demo-caption-title">跨屏响应</strong><p id="demo-caption-description">从宽屏到紧凑窗口，阅读布局随空间变化。</p></div>
           </div>
         </div>
       </section>
