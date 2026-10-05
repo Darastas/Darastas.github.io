@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f9f7f3" />
-    <meta name="description" content="FocusFeed 是一款本地优先的 RSS 阅读器。跨屏阅读、电子书、高光批注，使用你自己的 AI 接口进行摘要、翻译与解读。下载 Windows、Android 与 Linux Beta 版本。" />
+    <meta name="description" content="FocusFeed 是一款本地优先的 RSS 阅读器。跨屏阅读、电子书、高亮与批注导出为 Markdown / HTML，使用自己的 AI 接口进行摘要、翻译与解读。下载 Windows、Android 与 Linux Beta，支持 Linux 终端安装。" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="FocusFeed — 把注意力还给阅读" />
-    <meta property="og:description" content="本地优先的 AI RSS 阅读器。阅读、整理、理解，尽在你的设备上。" />
+    <meta property="og:description" content="本地优先的 AI RSS 阅读器。高亮与批注可导出为 Markdown / HTML，支持 Windows、Android 与 Linux Beta。" />
     <meta property="og:image" content="/assets/devices.png" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
@@ -78,11 +78,12 @@
           <div class="feature-copy">
             <span class="feature-index">01—B</span>
             <h3>留下值得<br />再读的一句。</h3>
-            <p>高光与批注就在文章旁边。标记想法，不打断阅读。</p>
+            <p>高亮与批注就在文章旁边。读完后，把保存的摘录和想法导出，留作自己的阅读笔记。</p>
             <ul class="feature-details">
-              <li>用高光、直线或波浪线，区分不同的阅读标记。</li>
+              <li>用高亮、直线或波浪线，区分不同的阅读标记。</li>
               <li>批注跟随选中文字保存，重读时能回到上下文。</li>
-              <li>直接在当前文章记录想法，不需要切换工具。</li>
+              <li>阅读页导出本篇笔记；设置 → 导出可批量选择全部或仅收藏的文章与书本章节。</li>
+              <li>支持 Markdown / HTML；批量打包为 ZIP，保留原文链接、摘录、批注、颜色与时间。</li>
             </ul>
           </div>
           <figure class="feature-visual">
@@ -188,6 +189,37 @@
               <button class="hash-button" type="button" data-hash="6cab2facd57bbe27440aeda7c17378d56acaa36e77892faebcd02872596f43d4" aria-label="复制 Linux Beta RPM SHA-256">SHA-256 <span>6cab2fac…</span></button>
             </article>
           </div>
+          <!-- linux-install:start -->
+          <section class="linux-install" aria-labelledby="linux-install-title">
+            <span class="download-system">LINUX · X86_64 · BETA</span>
+            <h3 id="linux-install-title">在终端安装。</h3>
+            <p>复制这条命令，自动选择 DEB / RPM、校验 SHA-256 并安装 Linux 0.1.7 Beta。支持 Linux Mint、Ubuntu、Debian（apt）与 Fedora（dnf）。</p>
+            <div class="terminal-command">
+              <pre><code id="linux-install-command">curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code></pre>
+              <button class="command-button" type="button" data-copy-target="linux-install-command">复制命令</button>
+            </div>
+            <p class="install-hint">安装前请关闭 FocusFeed。脚本会处理旧 Beta 重装与误标版本降级；仅安装阶段需要 sudo。需要 curl、sha256sum 和可提供 WebKitGTK 4.1 的软件源。</p>
+            <details class="install-details">
+              <summary>查看手动安装命令</summary>
+              <p>Linux Mint / Ubuntu / Debian</p>
+              <div class="terminal-command">
+                <pre><code id="linux-deb-command">curl -fL --proto '=https' --proto-redir '=https' 'https://focusfeed-site.pages.dev/download/FocusFeed_0.1.7_amd64.deb?rev=9e57930ed742ba1b2e5f407fa5dfbd1498912053239264dd209b1c80f00a05cb' -o 'FocusFeed_0.1.7_amd64.deb' &amp;&amp;
+printf '%s  %s\n' '9e57930ed742ba1b2e5f407fa5dfbd1498912053239264dd209b1c80f00a05cb' 'FocusFeed_0.1.7_amd64.deb' | sha256sum -c - &amp;&amp;
+sudo apt-get install --yes --allow-downgrades --reinstall './FocusFeed_0.1.7_amd64.deb'</code></pre>
+                <button class="command-button" type="button" data-copy-target="linux-deb-command">复制 DEB 命令</button>
+              </div>
+              <p>Fedora（dnf）</p>
+              <div class="terminal-command">
+                <pre><code id="linux-rpm-command">curl -fL --proto '=https' --proto-redir '=https' 'https://focusfeed-site.pages.dev/download/FocusFeed-0.1.7-1.x86_64.rpm?rev=6cab2facd57bbe27440aeda7c17378d56acaa36e77892faebcd02872596f43d4' -o 'FocusFeed-0.1.7-1.x86_64.rpm' &amp;&amp;
+printf '%s  %s\n' '6cab2facd57bbe27440aeda7c17378d56acaa36e77892faebcd02872596f43d4' 'FocusFeed-0.1.7-1.x86_64.rpm' | sha256sum -c - &amp;&amp;
+sudo dnf install './FocusFeed-0.1.7-1.x86_64.rpm'</code></pre>
+                <button class="command-button" type="button" data-copy-target="linux-rpm-command">复制 RPM 命令</button>
+              </div>
+              <p class="install-hint">RPM 已安装同版时，将 install 改为 reinstall；误标的 0.17.0 需改为 downgrade。安装后从应用菜单启动，或以普通用户运行 <code>rss-cross-app</code>。</p>
+            </details>
+            <a class="install-source" href="https://focusfeed-site.pages.dev/install.sh">查看安装脚本 ↗</a>
+          </section>
+          <!-- linux-install:end -->
           <p class="download-note">Windows 文件暂未进行代码签名，系统可能显示“未知发布者”；安装前可核对上方 SHA-256。Android 版需要 ARM64 设备，并允许安装来自浏览器的 APK。</p>
           <p class="download-note">Linux 0.1.7 为 Beta 测试版，需要 x86_64、glibc 2.34 或更新版本和 WebKitGTK 4.1。使用 apt 或 dnf 安装可自动解析依赖；动画、字体切换与高刷新率表现仍需在实际桌面环境中验证。</p>
         </div>

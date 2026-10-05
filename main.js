@@ -51,3 +51,15 @@ document.querySelectorAll(".hash-button").forEach((button) => {
     }
   });
 });
+
+document.querySelectorAll(".command-button").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const command = document.getElementById(button.dataset.copyTarget);
+    try {
+      await navigator.clipboard.writeText(command.textContent);
+      showToast("安装命令已复制");
+    } catch {
+      showToast("复制失败，请选中命令手动复制");
+    }
+  });
+});

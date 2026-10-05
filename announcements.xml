@@ -18,7 +18,8 @@
 <li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.7-1.x86_64.rpm">Linux Beta RPM</a></li>
 </ul>
 <h2>Linux Beta</h2>
-<p>Linux 0.1.7 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。 使用 apt 或 dnf 安装可自动解析依赖。</p>
+<p>Linux 0.1.7 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。</p>
+<p>现在可以直接在终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。 脚本自动选择 DEB / RPM、校验 SHA-256，再通过 apt 或 dnf 安装；也会处理同版本早期 Beta 重装及误标版本降级。 安装前请关闭 FocusFeed；需要 x86_64、curl、sha256sum 和可提供 WebKitGTK 4.1 的软件源。官网<a href="https://darastas.github.io/#download">下载区</a>也提供可复制的手动下载与安装命令。 使用 apt 或 dnf 安装可自动解析依赖。</p>
 <p>笔记导出的后端与三端构建已验证，前端交互由用户验收。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需反馈。</p>
 <h2>版本号更正</h2>
 <p>本次三端更新的正确版本号为 <strong>0.1.7</strong>，现已统一更正。已经安装误标版本的用户，请下载本页对应平台的安装包覆盖安装；安卓保留较高的内部构建编号，以允许覆盖升级。</p>]]></description><content:encoded><![CDATA[<p>这次更新让你把阅读时保存的高亮和批注带到应用之外。Windows、Android 和 Linux 使用统一版本号 <strong>0.1.7</strong>。</p>
@@ -40,7 +41,8 @@
 <li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.7-1.x86_64.rpm">Linux Beta RPM</a></li>
 </ul>
 <h2>Linux Beta</h2>
-<p>Linux 0.1.7 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。 使用 apt 或 dnf 安装可自动解析依赖。</p>
+<p>Linux 0.1.7 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。</p>
+<p>现在可以直接在终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。 脚本自动选择 DEB / RPM、校验 SHA-256，再通过 apt 或 dnf 安装；也会处理同版本早期 Beta 重装及误标版本降级。 安装前请关闭 FocusFeed；需要 x86_64、curl、sha256sum 和可提供 WebKitGTK 4.1 的软件源。官网<a href="https://darastas.github.io/#download">下载区</a>也提供可复制的手动下载与安装命令。 使用 apt 或 dnf 安装可自动解析依赖。</p>
 <p>笔记导出的后端与三端构建已验证，前端交互由用户验收。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需反馈。</p>
 <h2>版本号更正</h2>
 <p>本次三端更新的正确版本号为 <strong>0.1.7</strong>，现已统一更正。已经安装误标版本的用户，请下载本页对应平台的安装包覆盖安装；安卓保留较高的内部构建编号，以允许覆盖升级。</p>]]></content:encoded></item>
