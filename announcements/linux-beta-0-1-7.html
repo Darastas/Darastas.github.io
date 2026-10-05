@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="Linux Beta 现已提供原生 x86_64 的 DEB 与 RPM 安装包，欢迎下载体验并反馈。" /><title>FocusFeed Linux 0.1.7 Beta 已上线 — FocusFeed</title><link rel="icon" href="/favicon.svg" /><link rel="stylesheet" href="/styles.css" /><link rel="alternate" type="application/rss+xml" title="FocusFeed 官方公告" href="https://darastas.github.io/announcements.xml" /></head>
+<body><a class="skip-link" href="#main">跳转到正文</a><header class="site-header"><div class="header-inner wrap"><a class="brand" href="/"><img src="/favicon.svg" alt="" width="32" height="32" /><span>FocusFeed</span></a><nav id="main-nav" class="main-nav" aria-label="主导航"><a href="/">官网</a><a href="/rsshub.html">生成 RSS</a><a href="/announcements/" aria-current="page">公告</a></nav><button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">菜单</button><a class="header-download" href="https://darastas.github.io/announcements.xml">订阅公告 RSS ↗</a></div></header>
+<main id="main" class="announcement-page wrap announcement-detail"><a class="announcement-back" href="/announcements/">← 全部公告</a><article><header><div class="announcement-meta"><time datetime="2026-10-05T06:25:00Z">2026-10-05</time><span class="announcement-version">v0.1.7</span></div><h1>FocusFeed Linux 0.1.7 Beta 已上线</h1><p>Linux Beta 现已提供原生 x86_64 的 DEB 与 RPM 安装包，欢迎下载体验并反馈。</p></header><div class="article-body"><p>FocusFeed 的 <strong>Linux 0.1.7 Beta 测试版已上线</strong>。现在可以在 Linux 上阅读订阅与电子书，使用账户同步、批注和自己的 AI 接口。</p>
+<h2>下载与安装</h2>
+<ul>
+<li>Linux Mint、Ubuntu、Debian：下载 <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.7_amd64.deb">DEB 安装包</a>。</li>
+<li>Fedora 与支持 RPM 的发行版：下载 <a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.7-1.x86_64.rpm">RPM 安装包</a>。</li>
+<li><a href="https://darastas.github.io/#download">官网下载区</a>提供两种安装包的 SHA-256 校验值。</li>
+</ul>
+<p>当前支持 <strong>x86_64</strong>，需要 glibc 2.34 或更新版本及 WebKitGTK 4.1。建议使用系统的 apt 或 dnf 安装下载的文件，由包管理器解析依赖。</p>
+<h2>本次 Beta 调整</h2>
+<ul>
+<li>调整设置卡片层级与背景效果，减少设置页面的重绘负担。</li>
+<li>优化字体设置应用时机和羽化滑块的拖动释放处理。</li>
+<li>关闭 WebKit 偏向 60 FPS 的设置，让高刷新率显示器有机会使用系统显示时钟；实际效果取决于桌面环境和显卡驱动。</li>
+<li>新增运行与崩溃诊断；渲染进程意外退出后最多自动重载一次。</li>
+<li>接入独立的 Linux 更新清单和 DEB/RPM 下载入口。</li>
+</ul>
+<h2>测试版与反馈</h2>
+<p><strong>这是 Beta 测试版。</strong> 动画、字体切换、高刷新率和不同 Linux 桌面环境的稳定性仍需实际使用验证；目前不承诺所有设备都能达到显示器的最高刷新率。</p>
+<p>遇到闪退、卡死或显示异常时，请提供发行版版本、桌面环境、显卡驱动和复现步骤。运行日志位于 <code>~/.local/share/com.rsscross.app/logs/linux-runtime.log</code>；设置了 XDG_DATA_HOME 时，请在对应的数据目录中查找。</p>
+<p>渲染进程重载可能丢失未保存的界面状态，不能处理主进程崩溃或显卡驱动卡死。感谢参与测试并帮助我们完善 Linux 体验。</p></div></article></main><footer class="site-footer wrap"><div class="footer-brand"><img src="/favicon.svg" alt="" width="28" height="28" /><span>FocusFeed</span></div><p>把注意力还给阅读。</p><a href="/">返回官网 ↑</a></footer><script type="module" src="/navigation.js"></script></body></html>
