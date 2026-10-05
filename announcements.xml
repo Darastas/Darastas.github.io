@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>FocusFeed 官方公告</title><link>https://darastas.github.io/announcements/</link><description>FocusFeed 版本更新与使用消息</description><language>zh-CN</language><atom:link href="https://darastas.github.io/announcements.xml" rel="self" type="application/rss+xml" /><item><title>FocusFeed Linux 0.1.7 Beta 已上线</title><link>https://darastas.github.io/announcements/linux-beta-0-1-7.html</link><guid isPermaLink="false">urn:focusfeed:release:linux-beta:0.1.7</guid><pubDate>Mon, 05 Oct 2026 06:25:00 GMT</pubDate><category>v0.1.7</category><description><![CDATA[<p>FocusFeed 的 <strong>Linux 0.1.7 Beta 测试版已上线</strong>。现在可以在 Linux 上阅读订阅与电子书，使用账户同步、批注和自己的 AI 接口。</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>FocusFeed 官方公告</title><link>https://darastas.github.io/announcements/</link><description>FocusFeed 版本更新与使用消息</description><language>zh-CN</language><atom:link href="https://darastas.github.io/announcements.xml" rel="self" type="application/rss+xml" /><item><title>FocusFeed 0.17.0：高亮与批注导出，Linux 继续 Beta</title><link>https://darastas.github.io/announcements/linux-beta-0-17-0.html</link><guid isPermaLink="false">urn:focusfeed:release:0.17.0</guid><pubDate>Mon, 05 Oct 2026 13:12:27 GMT</pubDate><category>v0.17.0</category><description><![CDATA[<p>这次更新让你把阅读时保存的高亮和批注带到应用之外。Windows、Android 和 Linux 使用统一版本号 <strong>0.17.0</strong>。</p>
+<blockquote><p>将摘录和自己的想法整理成可保存、可阅读的笔记。</p></blockquote>
+<h2>如何导出</h2>
+<ul>
+<li><strong>导出本篇笔记</strong>：打开文章或书本章节，点击阅读工具栏的下载图标，选择 Markdown 或 HTML。</li>
+<li><strong>批量导出</strong>：设置 → 导出 → 选择「高亮与批注」，选全部文章或仅收藏，保存 ZIP。每篇有笔记的文章或章节是一份文件。</li>
+<li><strong>保留阅读信息</strong>：文件包含标题、作者、来源链接、摘录、批注、标记颜色、笔型及创建和更新时间。HTML 显示标记颜色与样式；Markdown 使用引用块和文字描述。</li>
+<li><strong>离线可用</strong>：导出本机已经保存的笔记，无需联网。安卓使用系统文档保存界面选择位置。</li>
+</ul>
+<p>升级后新建的标记会保存完整摘录。旧版已截断的长摘录无法补回未保存的文字；批注编辑仍最多 2000 个字符。 导出文件用于阅读和整理，暂不支持导入还原。</p>
+<h2>三端下载</h2>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.17.0_x64-setup.exe">Windows 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.17.0.exe">Windows 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.17.0_arm64.apk">Android ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.17.0_amd64.deb">Linux Beta DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.17.0-1.x86_64.rpm">Linux Beta RPM</a></li>
+</ul>
+<h2>Linux Beta</h2>
+<p>Linux 0.17.0 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。 使用 apt 或 dnf 安装可自动解析依赖。</p>
+<p>笔记导出的后端与三端构建已验证，前端交互由用户验收。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需反馈。</p>]]></description><content:encoded><![CDATA[<p>这次更新让你把阅读时保存的高亮和批注带到应用之外。Windows、Android 和 Linux 使用统一版本号 <strong>0.17.0</strong>。</p>
+<blockquote><p>将摘录和自己的想法整理成可保存、可阅读的笔记。</p></blockquote>
+<h2>如何导出</h2>
+<ul>
+<li><strong>导出本篇笔记</strong>：打开文章或书本章节，点击阅读工具栏的下载图标，选择 Markdown 或 HTML。</li>
+<li><strong>批量导出</strong>：设置 → 导出 → 选择「高亮与批注」，选全部文章或仅收藏，保存 ZIP。每篇有笔记的文章或章节是一份文件。</li>
+<li><strong>保留阅读信息</strong>：文件包含标题、作者、来源链接、摘录、批注、标记颜色、笔型及创建和更新时间。HTML 显示标记颜色与样式；Markdown 使用引用块和文字描述。</li>
+<li><strong>离线可用</strong>：导出本机已经保存的笔记，无需联网。安卓使用系统文档保存界面选择位置。</li>
+</ul>
+<p>升级后新建的标记会保存完整摘录。旧版已截断的长摘录无法补回未保存的文字；批注编辑仍最多 2000 个字符。 导出文件用于阅读和整理，暂不支持导入还原。</p>
+<h2>三端下载</h2>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.17.0_x64-setup.exe">Windows 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.17.0.exe">Windows 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.17.0_arm64.apk">Android ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.17.0_amd64.deb">Linux Beta DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.17.0-1.x86_64.rpm">Linux Beta RPM</a></li>
+</ul>
+<h2>Linux Beta</h2>
+<p>Linux 0.17.0 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。 使用 apt 或 dnf 安装可自动解析依赖。</p>
+<p>笔记导出的后端与三端构建已验证，前端交互由用户验收。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需反馈。</p>]]></content:encoded></item>
+<item><title>FocusFeed Linux 0.1.7 Beta 已上线</title><link>https://darastas.github.io/announcements/linux-beta-0-1-7.html</link><guid isPermaLink="false">urn:focusfeed:release:linux-beta:0.1.7</guid><pubDate>Mon, 05 Oct 2026 06:25:00 GMT</pubDate><category>v0.1.7</category><description><![CDATA[<p>FocusFeed 的 <strong>Linux 0.1.7 Beta 测试版已上线</strong>。现在可以在 Linux 上阅读订阅与电子书，使用账户同步、批注和自己的 AI 接口。</p>
 <h2>下载与安装</h2>
 <ul>
 <li>Linux Mint、Ubuntu、Debian：下载 <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.7_amd64.deb">DEB 安装包</a>。</li>
