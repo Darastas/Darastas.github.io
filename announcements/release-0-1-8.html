@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="修复 OpenAI 兼容服务的重复版本路径问题，模型拉取错误现在持续显示并支持复制。Windows、Android 与 Linux 同步更新。" /><title>FocusFeed 0.1.8：修复 AI 接口地址与错误提示 — FocusFeed</title><link rel="icon" href="/favicon.svg" /><link rel="stylesheet" href="/styles.css" /><link rel="alternate" type="application/rss+xml" title="FocusFeed 官方公告" href="https://darastas.github.io/announcements.xml" /></head>
+<body><a class="skip-link" href="#main">跳转到正文</a><header class="site-header"><div class="header-inner wrap"><a class="brand" href="/"><img src="/favicon.svg" alt="" width="32" height="32" /><span>FocusFeed</span></a><nav id="main-nav" class="main-nav" aria-label="主导航"><a href="/">官网</a><a href="/rsshub.html">生成 RSS</a><a href="/announcements/" aria-current="page">公告</a></nav><button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">菜单</button><a class="header-download" href="https://darastas.github.io/announcements.xml">订阅公告 RSS ↗</a></div></header>
+<main id="main" class="announcement-page wrap announcement-detail"><a class="announcement-back" href="/announcements/">← 全部公告</a><article><header><div class="announcement-meta"><time datetime="2026-10-09T06:48:00Z">2026-10-09</time><span class="announcement-version">v0.1.8</span></div><h1>FocusFeed 0.1.8：修复 AI 接口地址与错误提示</h1><p>修复 OpenAI 兼容服务的重复版本路径问题，模型拉取错误现在持续显示并支持复制。Windows、Android 与 Linux 同步更新。</p></header><div class="article-body"><p>本次更新修复 AI 服务接入中的地址兼容问题，Windows、Android 和 Linux 使用统一版本号 <strong>0.1.8</strong>。</p>
+<h2>AI 接口地址</h2>
+<ul>
+<li>OpenAI 兼容接入按你填写的 API 根地址发送请求，不再自动添加 <code>/v1</code>。</li>
+<li>保留服务商要求的版本路径。例如，硅基流动填写 <code>https://api.siliconflow.cn/v1</code>；OpenAI 填写 <code>https://api.openai.com/v1</code>。</li>
+<li>支持粘贴完整的 Chat Completions 或 Responses 接口地址；拉取模型时会使用同一 API 根地址下的模型列表接口。</li>
+<li>摘要、翻译、解读和共用 OpenAI 接入配置的朗读同步采用这一地址规则。</li>
+</ul>
+<p>升级后请检查「设置 → AI」中的 Base URL。如果旧配置只填了域名，且服务商要求 <code>/v1</code> 等版本路径，请把相应路径补入地址。已填写完整根地址的配置可以继续使用。</p>
+<h2>错误提示</h2>
+<ul>
+<li>模型拉取失败的原因持续显示在对应 API 卡片中，支持选中复制和自动换行。</li>
+<li>重新拉取模型或保存配置会清除旧提示；连接测试成功仍显示「连接正常」。</li>
+<li>修正窄屏下全局提示被设置面板遮挡或超出屏幕的问题。</li>
+</ul>
+<h2>三端下载</h2>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_x64-setup.exe">Windows 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.1.8.exe">Windows 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.1.8_arm64.apk">Android ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_amd64.deb">Linux Beta DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">Linux Beta RPM</a></li>
+</ul>
+<p>Linux 继续标注 <strong>Beta 测试版</strong>，需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。官网<a href="https://darastas.github.io/#download">下载区</a>提供 SHA-256 和终端安装说明。</p>
+<h2>本地数据与隐私</h2>
+<p>订阅、阅读记录、笔记与接入配置仍保存在本机。AI 请求只发送到你配置的服务商；本次更新不增加阅读数据上传或云端同步。</p></div></article></main><footer class="site-footer wrap"><div class="footer-brand"><img src="/favicon.svg" alt="" width="28" height="28" /><span>FocusFeed</span></div><p>把注意力还给阅读。</p><a href="/">返回官网 ↑</a></footer><script type="module" src="/navigation.js"></script></body></html>

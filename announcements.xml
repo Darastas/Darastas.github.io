@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>FocusFeed 官方公告</title><link>https://darastas.github.io/announcements/</link><description>FocusFeed 版本更新与使用消息</description><language>zh-CN</language><atom:link href="https://darastas.github.io/announcements.xml" rel="self" type="application/rss+xml" /><item><title>FocusFeed 0.1.7：高亮与批注导出，Linux 继续 Beta</title><link>https://darastas.github.io/announcements/release-0-1-7.html</link><guid isPermaLink="false">urn:focusfeed:release:0.17.0</guid><pubDate>Mon, 05 Oct 2026 13:12:27 GMT</pubDate><category>v0.1.7</category><description><![CDATA[<p>这次更新让你把阅读时保存的高亮和批注带到应用之外。Windows、Android 和 Linux 使用统一版本号 <strong>0.1.7</strong>。</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>FocusFeed 官方公告</title><link>https://darastas.github.io/announcements/</link><description>FocusFeed 版本更新与使用消息</description><language>zh-CN</language><atom:link href="https://darastas.github.io/announcements.xml" rel="self" type="application/rss+xml" /><item><title>FocusFeed 0.1.8：修复 AI 接口地址与错误提示</title><link>https://darastas.github.io/announcements/release-0-1-8.html</link><guid isPermaLink="false">urn:focusfeed:release:0.1.8</guid><pubDate>Fri, 09 Oct 2026 06:48:00 GMT</pubDate><category>v0.1.8</category><description><![CDATA[<p>本次更新修复 AI 服务接入中的地址兼容问题，Windows、Android 和 Linux 使用统一版本号 <strong>0.1.8</strong>。</p>
+<h2>AI 接口地址</h2>
+<ul>
+<li>OpenAI 兼容接入按你填写的 API 根地址发送请求，不再自动添加 <code>/v1</code>。</li>
+<li>保留服务商要求的版本路径。例如，硅基流动填写 <code>https://api.siliconflow.cn/v1</code>；OpenAI 填写 <code>https://api.openai.com/v1</code>。</li>
+<li>支持粘贴完整的 Chat Completions 或 Responses 接口地址；拉取模型时会使用同一 API 根地址下的模型列表接口。</li>
+<li>摘要、翻译、解读和共用 OpenAI 接入配置的朗读同步采用这一地址规则。</li>
+</ul>
+<p>升级后请检查「设置 → AI」中的 Base URL。如果旧配置只填了域名，且服务商要求 <code>/v1</code> 等版本路径，请把相应路径补入地址。已填写完整根地址的配置可以继续使用。</p>
+<h2>错误提示</h2>
+<ul>
+<li>模型拉取失败的原因持续显示在对应 API 卡片中，支持选中复制和自动换行。</li>
+<li>重新拉取模型或保存配置会清除旧提示；连接测试成功仍显示「连接正常」。</li>
+<li>修正窄屏下全局提示被设置面板遮挡或超出屏幕的问题。</li>
+</ul>
+<h2>三端下载</h2>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_x64-setup.exe">Windows 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.1.8.exe">Windows 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.1.8_arm64.apk">Android ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_amd64.deb">Linux Beta DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">Linux Beta RPM</a></li>
+</ul>
+<p>Linux 继续标注 <strong>Beta 测试版</strong>，需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。官网<a href="https://darastas.github.io/#download">下载区</a>提供 SHA-256 和终端安装说明。</p>
+<h2>本地数据与隐私</h2>
+<p>订阅、阅读记录、笔记与接入配置仍保存在本机。AI 请求只发送到你配置的服务商；本次更新不增加阅读数据上传或云端同步。</p>]]></description><content:encoded><![CDATA[<p>本次更新修复 AI 服务接入中的地址兼容问题，Windows、Android 和 Linux 使用统一版本号 <strong>0.1.8</strong>。</p>
+<h2>AI 接口地址</h2>
+<ul>
+<li>OpenAI 兼容接入按你填写的 API 根地址发送请求，不再自动添加 <code>/v1</code>。</li>
+<li>保留服务商要求的版本路径。例如，硅基流动填写 <code>https://api.siliconflow.cn/v1</code>；OpenAI 填写 <code>https://api.openai.com/v1</code>。</li>
+<li>支持粘贴完整的 Chat Completions 或 Responses 接口地址；拉取模型时会使用同一 API 根地址下的模型列表接口。</li>
+<li>摘要、翻译、解读和共用 OpenAI 接入配置的朗读同步采用这一地址规则。</li>
+</ul>
+<p>升级后请检查「设置 → AI」中的 Base URL。如果旧配置只填了域名，且服务商要求 <code>/v1</code> 等版本路径，请把相应路径补入地址。已填写完整根地址的配置可以继续使用。</p>
+<h2>错误提示</h2>
+<ul>
+<li>模型拉取失败的原因持续显示在对应 API 卡片中，支持选中复制和自动换行。</li>
+<li>重新拉取模型或保存配置会清除旧提示；连接测试成功仍显示「连接正常」。</li>
+<li>修正窄屏下全局提示被设置面板遮挡或超出屏幕的问题。</li>
+</ul>
+<h2>三端下载</h2>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_x64-setup.exe">Windows 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.1.8.exe">Windows 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.1.8_arm64.apk">Android ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_amd64.deb">Linux Beta DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">Linux Beta RPM</a></li>
+</ul>
+<p>Linux 继续标注 <strong>Beta 测试版</strong>，需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。官网<a href="https://darastas.github.io/#download">下载区</a>提供 SHA-256 和终端安装说明。</p>
+<h2>本地数据与隐私</h2>
+<p>订阅、阅读记录、笔记与接入配置仍保存在本机。AI 请求只发送到你配置的服务商；本次更新不增加阅读数据上传或云端同步。</p>]]></content:encoded></item>
+<item><title>FocusFeed Linux 0.1.8 Beta：AI 接入修复</title><link>https://darastas.github.io/announcements/linux-beta-0-1-8.html</link><guid isPermaLink="false">urn:focusfeed:release:linux-beta:0.1.8</guid><pubDate>Fri, 09 Oct 2026 06:47:59 GMT</pubDate><category>v0.1.8</category><description><![CDATA[<p>Linux 0.1.8 Beta 与 Windows、Android 同步更新。此次修复 AI 接口地址的重复版本路径问题，并改善模型拉取失败时的错误提示。具体配置方法见<a href="https://darastas.github.io/announcements/release-0-1-8.html">完整更新公告</a>。</p>
+<h2>下载与安装</h2>
+<ul>
+<li>Linux Mint、Ubuntu、Debian：<a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_amd64.deb">DEB 安装包</a>。</li>
+<li>Fedora 与支持 RPM 的发行版：<a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">RPM 安装包</a>。</li>
+<li><a href="https://darastas.github.io/#download">官网下载区</a>提供对应的 SHA-256、可复制的手动安装命令及终端安装入口。</li>
+</ul>
+<p>终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。</p>
+<p>需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。安装前请关闭 FocusFeed；脚本会校验安装包，再调用 apt 或 dnf，仅安装步骤需要 sudo。</p>
+<h2>Beta 范围</h2>
+<p>Linux 继续作为 Beta 测试版提供。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需用户反馈。阅读数据保存在本地，AI 请求发往你配置的服务商。</p>]]></description><content:encoded><![CDATA[<p>Linux 0.1.8 Beta 与 Windows、Android 同步更新。此次修复 AI 接口地址的重复版本路径问题，并改善模型拉取失败时的错误提示。具体配置方法见<a href="https://darastas.github.io/announcements/release-0-1-8.html">完整更新公告</a>。</p>
+<h2>下载与安装</h2>
+<ul>
+<li>Linux Mint、Ubuntu、Debian：<a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_amd64.deb">DEB 安装包</a>。</li>
+<li>Fedora 与支持 RPM 的发行版：<a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">RPM 安装包</a>。</li>
+<li><a href="https://darastas.github.io/#download">官网下载区</a>提供对应的 SHA-256、可复制的手动安装命令及终端安装入口。</li>
+</ul>
+<p>终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。</p>
+<p>需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。安装前请关闭 FocusFeed；脚本会校验安装包，再调用 apt 或 dnf，仅安装步骤需要 sudo。</p>
+<h2>Beta 范围</h2>
+<p>Linux 继续作为 Beta 测试版提供。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需用户反馈。阅读数据保存在本地，AI 请求发往你配置的服务商。</p>]]></content:encoded></item>
+<item><title>FocusFeed 0.1.7：高亮与批注导出，Linux 继续 Beta</title><link>https://darastas.github.io/announcements/release-0-1-7.html</link><guid isPermaLink="false">urn:focusfeed:release:0.17.0</guid><pubDate>Mon, 05 Oct 2026 13:12:27 GMT</pubDate><category>v0.1.7</category><description><![CDATA[<p>这次更新让你把阅读时保存的高亮和批注带到应用之外。Windows、Android 和 Linux 使用统一版本号 <strong>0.1.7</strong>。</p>
 <blockquote><p>将摘录和自己的想法整理成可保存、可阅读的笔记。</p></blockquote>
 <h2>如何导出</h2>
 <ul>
