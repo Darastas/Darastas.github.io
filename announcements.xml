@@ -23,6 +23,7 @@
 <li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">Linux Beta RPM</a></li>
 </ul>
 <p>Linux 继续标注 <strong>Beta 测试版</strong>，需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。官网<a href="https://darastas.github.io/#download">下载区</a>提供 SHA-256 和终端安装说明。</p>
+<p>终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。安装前请关闭 FocusFeed；脚本校验安装包后调用 apt 或 dnf，仅安装步骤需要 sudo。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需用户反馈。</p>
 <h2>本地数据与隐私</h2>
 <p>订阅、阅读记录、笔记与接入配置仍保存在本机。AI 请求只发送到你配置的服务商；本次更新不增加阅读数据上传或云端同步。</p>]]></description><content:encoded><![CDATA[<p>本次更新修复 AI 服务接入中的地址兼容问题，Windows、Android 和 Linux 使用统一版本号 <strong>0.1.8</strong>。</p>
 <h2>AI 接口地址</h2>
@@ -48,29 +49,9 @@
 <li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">Linux Beta RPM</a></li>
 </ul>
 <p>Linux 继续标注 <strong>Beta 测试版</strong>，需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。官网<a href="https://darastas.github.io/#download">下载区</a>提供 SHA-256 和终端安装说明。</p>
+<p>终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。安装前请关闭 FocusFeed；脚本校验安装包后调用 apt 或 dnf，仅安装步骤需要 sudo。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需用户反馈。</p>
 <h2>本地数据与隐私</h2>
 <p>订阅、阅读记录、笔记与接入配置仍保存在本机。AI 请求只发送到你配置的服务商；本次更新不增加阅读数据上传或云端同步。</p>]]></content:encoded></item>
-<item><title>FocusFeed Linux 0.1.8 Beta：AI 接入修复</title><link>https://darastas.github.io/announcements/linux-beta-0-1-8.html</link><guid isPermaLink="false">urn:focusfeed:release:linux-beta:0.1.8</guid><pubDate>Fri, 09 Oct 2026 06:47:59 GMT</pubDate><category>v0.1.8</category><description><![CDATA[<p>Linux 0.1.8 Beta 与 Windows、Android 同步更新。此次修复 AI 接口地址的重复版本路径问题，并改善模型拉取失败时的错误提示。具体配置方法见<a href="https://darastas.github.io/announcements/release-0-1-8.html">完整更新公告</a>。</p>
-<h2>下载与安装</h2>
-<ul>
-<li>Linux Mint、Ubuntu、Debian：<a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_amd64.deb">DEB 安装包</a>。</li>
-<li>Fedora 与支持 RPM 的发行版：<a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">RPM 安装包</a>。</li>
-<li><a href="https://darastas.github.io/#download">官网下载区</a>提供对应的 SHA-256、可复制的手动安装命令及终端安装入口。</li>
-</ul>
-<p>终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。</p>
-<p>需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。安装前请关闭 FocusFeed；脚本会校验安装包，再调用 apt 或 dnf，仅安装步骤需要 sudo。</p>
-<h2>Beta 范围</h2>
-<p>Linux 继续作为 Beta 测试版提供。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需用户反馈。阅读数据保存在本地，AI 请求发往你配置的服务商。</p>]]></description><content:encoded><![CDATA[<p>Linux 0.1.8 Beta 与 Windows、Android 同步更新。此次修复 AI 接口地址的重复版本路径问题，并改善模型拉取失败时的错误提示。具体配置方法见<a href="https://darastas.github.io/announcements/release-0-1-8.html">完整更新公告</a>。</p>
-<h2>下载与安装</h2>
-<ul>
-<li>Linux Mint、Ubuntu、Debian：<a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.8_amd64.deb">DEB 安装包</a>。</li>
-<li>Fedora 与支持 RPM 的发行版：<a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.8-1.x86_64.rpm">RPM 安装包</a>。</li>
-<li><a href="https://darastas.github.io/#download">官网下载区</a>提供对应的 SHA-256、可复制的手动安装命令及终端安装入口。</li>
-</ul>
-<p>终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。</p>
-<p>需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。安装前请关闭 FocusFeed；脚本会校验安装包，再调用 apt 或 dnf，仅安装步骤需要 sudo。</p>
-<h2>Beta 范围</h2>
-<p>Linux 继续作为 Beta 测试版提供。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需用户反馈。阅读数据保存在本地，AI 请求发往你配置的服务商。</p>]]></content:encoded></item>
 <item><title>FocusFeed 0.1.7：高亮与批注导出，Linux 继续 Beta</title><link>https://darastas.github.io/announcements/release-0-1-7.html</link><guid isPermaLink="false">urn:focusfeed:release:0.17.0</guid><pubDate>Mon, 05 Oct 2026 13:12:27 GMT</pubDate><category>v0.1.7</category><description><![CDATA[<p>这次更新让你把阅读时保存的高亮和批注带到应用之外。Windows、Android 和 Linux 使用统一版本号 <strong>0.1.7</strong>。</p>
 <blockquote><p>将摘录和自己的想法整理成可保存、可阅读的笔记。</p></blockquote>
 <h2>如何导出</h2>
@@ -92,7 +73,16 @@
 <h2>Linux Beta</h2>
 <p>Linux 0.1.7 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。</p>
 <p>现在可以直接在终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。 脚本自动选择 DEB / RPM、校验 SHA-256，再通过 apt 或 dnf 安装；也会处理同版本早期 Beta 重装及误标版本降级。 安装前请关闭 FocusFeed；需要 x86_64、curl、sha256sum 和可提供 WebKitGTK 4.1 的软件源。官网<a href="https://darastas.github.io/#download">下载区</a>也提供可复制的手动下载与安装命令。 使用 apt 或 dnf 安装可自动解析依赖。</p>
+<p>本次 Linux Beta 同时包含以下调整：</p>
+<ul>
+<li>调整设置卡片层级与背景效果，减少设置页面的重绘负担。</li>
+<li>优化字体设置应用时机和羽化滑块的拖动释放处理。</li>
+<li>关闭 WebKit 偏向 60 FPS 的设置；实际刷新表现取决于桌面环境和显卡驱动。</li>
+<li>新增运行与崩溃诊断；渲染进程意外退出后最多自动重载一次。</li>
+<li>接入独立的 Linux 更新清单和 DEB/RPM 下载入口。</li>
+</ul>
 <p>笔记导出的后端与三端构建已验证，前端交互由用户验收。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需反馈。</p>
+<p>遇到闪退、卡死或显示异常时，请提供发行版版本、桌面环境、显卡驱动和复现步骤。运行日志位于 <code>~/.local/share/com.rsscross.app/logs/linux-runtime.log</code>；设置了 XDG_DATA_HOME 时，请在对应的数据目录中查找。 渲染进程重载可能丢失未保存的界面状态，不能处理主进程崩溃或显卡驱动卡死。</p>
 <h2>版本号更正</h2>
 <p>本次三端更新的正确版本号为 <strong>0.1.7</strong>，现已统一更正。已经安装误标版本的用户，请下载本页对应平台的安装包覆盖安装；安卓保留较高的内部构建编号，以允许覆盖升级。</p>]]></description><content:encoded><![CDATA[<p>这次更新让你把阅读时保存的高亮和批注带到应用之外。Windows、Android 和 Linux 使用统一版本号 <strong>0.1.7</strong>。</p>
 <blockquote><p>将摘录和自己的想法整理成可保存、可阅读的笔记。</p></blockquote>
@@ -115,50 +105,18 @@
 <h2>Linux Beta</h2>
 <p>Linux 0.1.7 继续作为 <strong>Beta 测试版</strong> 提供。需要 x86_64、glibc 2.34 或更新版本及 WebKitGTK 4.1。 DEB 适用于 Linux Mint、Ubuntu、Debian 等发行版；RPM 适用于 Fedora 等发行版。</p>
 <p>现在可以直接在终端安装：<code>curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code>。 脚本自动选择 DEB / RPM、校验 SHA-256，再通过 apt 或 dnf 安装；也会处理同版本早期 Beta 重装及误标版本降级。 安装前请关闭 FocusFeed；需要 x86_64、curl、sha256sum 和可提供 WebKitGTK 4.1 的软件源。官网<a href="https://darastas.github.io/#download">下载区</a>也提供可复制的手动下载与安装命令。 使用 apt 或 dnf 安装可自动解析依赖。</p>
+<p>本次 Linux Beta 同时包含以下调整：</p>
+<ul>
+<li>调整设置卡片层级与背景效果，减少设置页面的重绘负担。</li>
+<li>优化字体设置应用时机和羽化滑块的拖动释放处理。</li>
+<li>关闭 WebKit 偏向 60 FPS 的设置；实际刷新表现取决于桌面环境和显卡驱动。</li>
+<li>新增运行与崩溃诊断；渲染进程意外退出后最多自动重载一次。</li>
+<li>接入独立的 Linux 更新清单和 DEB/RPM 下载入口。</li>
+</ul>
 <p>笔记导出的后端与三端构建已验证，前端交互由用户验收。实体桌面的动画、字体切换、稳定性与高刷新率表现仍需反馈。</p>
+<p>遇到闪退、卡死或显示异常时，请提供发行版版本、桌面环境、显卡驱动和复现步骤。运行日志位于 <code>~/.local/share/com.rsscross.app/logs/linux-runtime.log</code>；设置了 XDG_DATA_HOME 时，请在对应的数据目录中查找。 渲染进程重载可能丢失未保存的界面状态，不能处理主进程崩溃或显卡驱动卡死。</p>
 <h2>版本号更正</h2>
 <p>本次三端更新的正确版本号为 <strong>0.1.7</strong>，现已统一更正。已经安装误标版本的用户，请下载本页对应平台的安装包覆盖安装；安卓保留较高的内部构建编号，以允许覆盖升级。</p>]]></content:encoded></item>
-<item><title>FocusFeed Linux 0.1.7 Beta 已上线</title><link>https://darastas.github.io/announcements/linux-beta-0-1-7.html</link><guid isPermaLink="false">urn:focusfeed:release:linux-beta:0.1.7</guid><pubDate>Mon, 05 Oct 2026 06:25:00 GMT</pubDate><category>v0.1.7</category><description><![CDATA[<p>FocusFeed 的 <strong>Linux 0.1.7 Beta 测试版已上线</strong>。现在可以在 Linux 上阅读订阅与电子书，使用账户同步、批注和自己的 AI 接口。</p>
-<h2>下载与安装</h2>
-<ul>
-<li>Linux Mint、Ubuntu、Debian：下载 <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.7_amd64.deb">DEB 安装包</a>。</li>
-<li>Fedora 与支持 RPM 的发行版：下载 <a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.7-1.x86_64.rpm">RPM 安装包</a>。</li>
-<li><a href="https://darastas.github.io/#download">官网下载区</a>提供两种安装包的 SHA-256 校验值。</li>
-</ul>
-<p>当前支持 <strong>x86_64</strong>，需要 glibc 2.34 或更新版本及 WebKitGTK 4.1。建议使用系统的 apt 或 dnf 安装下载的文件，由包管理器解析依赖。</p>
-<h2>本次 Beta 调整</h2>
-<p>三端 0.1.7 更新现已加入高亮与批注导出，可在设置中批量保存 ZIP，或在阅读页导出本篇 Markdown / HTML 笔记。 详见<a href="https://darastas.github.io/announcements/release-0-1-7.html">本次更新内容</a>。此前已安装的早期 Linux Beta 请下载当前安装包覆盖安装。</p>
-<ul>
-<li>调整设置卡片层级与背景效果，减少设置页面的重绘负担。</li>
-<li>优化字体设置应用时机和羽化滑块的拖动释放处理。</li>
-<li>关闭 WebKit 偏向 60 FPS 的设置，让高刷新率显示器有机会使用系统显示时钟；实际效果取决于桌面环境和显卡驱动。</li>
-<li>新增运行与崩溃诊断；渲染进程意外退出后最多自动重载一次。</li>
-<li>接入独立的 Linux 更新清单和 DEB/RPM 下载入口。</li>
-</ul>
-<h2>测试版与反馈</h2>
-<p><strong>这是 Beta 测试版。</strong> 动画、字体切换、高刷新率和不同 Linux 桌面环境的稳定性仍需实际使用验证；目前不承诺所有设备都能达到显示器的最高刷新率。</p>
-<p>遇到闪退、卡死或显示异常时，请提供发行版版本、桌面环境、显卡驱动和复现步骤。运行日志位于 <code>~/.local/share/com.rsscross.app/logs/linux-runtime.log</code>；设置了 XDG_DATA_HOME 时，请在对应的数据目录中查找。</p>
-<p>渲染进程重载可能丢失未保存的界面状态，不能处理主进程崩溃或显卡驱动卡死。感谢参与测试并帮助我们完善 Linux 体验。</p>]]></description><content:encoded><![CDATA[<p>FocusFeed 的 <strong>Linux 0.1.7 Beta 测试版已上线</strong>。现在可以在 Linux 上阅读订阅与电子书，使用账户同步、批注和自己的 AI 接口。</p>
-<h2>下载与安装</h2>
-<ul>
-<li>Linux Mint、Ubuntu、Debian：下载 <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.1.7_amd64.deb">DEB 安装包</a>。</li>
-<li>Fedora 与支持 RPM 的发行版：下载 <a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.1.7-1.x86_64.rpm">RPM 安装包</a>。</li>
-<li><a href="https://darastas.github.io/#download">官网下载区</a>提供两种安装包的 SHA-256 校验值。</li>
-</ul>
-<p>当前支持 <strong>x86_64</strong>，需要 glibc 2.34 或更新版本及 WebKitGTK 4.1。建议使用系统的 apt 或 dnf 安装下载的文件，由包管理器解析依赖。</p>
-<h2>本次 Beta 调整</h2>
-<p>三端 0.1.7 更新现已加入高亮与批注导出，可在设置中批量保存 ZIP，或在阅读页导出本篇 Markdown / HTML 笔记。 详见<a href="https://darastas.github.io/announcements/release-0-1-7.html">本次更新内容</a>。此前已安装的早期 Linux Beta 请下载当前安装包覆盖安装。</p>
-<ul>
-<li>调整设置卡片层级与背景效果，减少设置页面的重绘负担。</li>
-<li>优化字体设置应用时机和羽化滑块的拖动释放处理。</li>
-<li>关闭 WebKit 偏向 60 FPS 的设置，让高刷新率显示器有机会使用系统显示时钟；实际效果取决于桌面环境和显卡驱动。</li>
-<li>新增运行与崩溃诊断；渲染进程意外退出后最多自动重载一次。</li>
-<li>接入独立的 Linux 更新清单和 DEB/RPM 下载入口。</li>
-</ul>
-<h2>测试版与反馈</h2>
-<p><strong>这是 Beta 测试版。</strong> 动画、字体切换、高刷新率和不同 Linux 桌面环境的稳定性仍需实际使用验证；目前不承诺所有设备都能达到显示器的最高刷新率。</p>
-<p>遇到闪退、卡死或显示异常时，请提供发行版版本、桌面环境、显卡驱动和复现步骤。运行日志位于 <code>~/.local/share/com.rsscross.app/logs/linux-runtime.log</code>；设置了 XDG_DATA_HOME 时，请在对应的数据目录中查找。</p>
-<p>渲染进程重载可能丢失未保存的界面状态，不能处理主进程崩溃或显卡驱动卡死。感谢参与测试并帮助我们完善 Linux 体验。</p>]]></content:encoded></item>
 <item><title>FocusFeed 0.1.6</title><link>https://darastas.github.io/announcements/release-0-1-6.html</link><guid isPermaLink="false">urn:focusfeed:release:0.1.6</guid><pubDate>Sun, 04 Oct 2026 06:24:40 GMT</pubDate><category>v0.1.6</category><description><![CDATA[<p>这次更新让你在 FocusFeed 中连接现有阅读服务，也能听文章和电子书。</p>
 <blockquote><p>订阅、阅读与收听，在同一个界面完成。</p></blockquote>
 <h2>本次更新</h2>
