@@ -4,6 +4,7 @@
 set -eu
 
 version='0.2.2.1'
+package_version='0.2.2+1'
 deb_file='FocusFeed_0.2.2.1_amd64.deb'
 deb_sha256='c5f4d032a7507126c9aa39766df7a724fd1ed7b22ed99e043baf0dc9e32cae54'
 rpm_file='FocusFeed-0.2.2.1-1.x86_64.rpm'
@@ -69,7 +70,7 @@ main() {
             || fail 'apt installation failed. Check the package-manager output, repositories and WebKitGTK 4.1 availability.'
     else
         action=install
-        target="0:$version-1"
+        target="0:$package_version-1"
         if installed=$(rpm -q --qf '%{EPOCHNUM}:%{VERSION}-%{RELEASE}\n' focus-feed 2>/dev/null); then
             if [ "$installed" = "$target" ]; then
                 action=reinstall
