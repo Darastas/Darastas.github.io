@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>FocusFeed 官方公告</title><link>https://darastas.github.io/announcements/</link><description>FocusFeed 版本更新与使用消息</description><language>zh-CN</language><atom:link href="https://darastas.github.io/announcements.xml" rel="self" type="application/rss+xml" /><item><title>FocusFeed 0.2.3：系统托盘、备份恢复与朗读进度</title><link>https://darastas.github.io/announcements/release-0-2-3.html</link><guid isPermaLink="false">urn:focusfeed:release:0.2.3</guid><pubDate>Thu, 15 Oct 2026 09:40:46 GMT</pubDate><category>v0.2.3</category><description><![CDATA[<p><strong>FocusFeed 0.2.3 加入系统托盘与单文件备份恢复，并改进 AI 朗读进度。</strong> Windows、Android 和 Linux 均提供新版安装包。朗读界面也提供签名小更新，方便仍在使用旧版核心的用户获取改进。</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>FocusFeed 官方公告</title><link>https://darastas.github.io/announcements/</link><description>FocusFeed 版本更新与使用消息</description><language>zh-CN</language><atom:link href="https://darastas.github.io/announcements.xml" rel="self" type="application/rss+xml" /><item><title>FocusFeed 0.2.4：粘贴网页地址，自动查找订阅源</title><link>https://darastas.github.io/announcements/release-0-2-4.html</link><guid isPermaLink="false">urn:focusfeed:release:0.2.4</guid><pubDate>Sun, 25 Oct 2026 13:50:34 GMT</pubDate><category>v0.2.4</category><description><![CDATA[<p><strong>FocusFeed 0.2.4 改善订阅地址识别。</strong> 添加订阅时，除了直接填写 RSS、Atom 或 JSON Feed 地址，也可以粘贴网站首页或文章链接，应用会尝试查找该网站提供的订阅源。</p>
+<h2>修复网页地址订阅失败</h2>
+<p>此前，一些网站的文章链接会提示 <code>Feed 解析失败: unable to parse feed: no root element</code>。原因是该地址返回网页，而应用直接按订阅源解析。</p>
+<ul>
+<li>现在会查找网页中声明的订阅链接；文章页没有声明时，继续查找网站首页及常见订阅路径。</li>
+<li>支持相对订阅链接、网页基址与地址跳转，保留稳定的订阅入口，便于后续同步。</li>
+<li>例如太隐网站的文章链接可找到其订阅源 <a href="https://wangyurui.com/feed.xml">wangyurui.com/feed.xml</a>。</li>
+<li>自动识别成功后，原订阅条目使用真实源地址，保留分组、解析模式、收藏和已读状态。</li>
+<li>改善重复源识别，处理粘贴地址末尾误带的常见中文标点。</li>
+</ul>
+<p><strong>文章链接会订阅该网站的更新。</strong> 该篇文章是否出现，取决于网站订阅源提供的文章范围；此功能不等同于保存单篇网页。</p>
+<h2>没找到订阅源时，说明原因</h2>
+<p>未发现可用源时，应用会提示检查网站是否提供 RSS、Atom 或 JSON Feed，并尝试填写实际订阅地址。</p>
+<p>此功能需要网站提供可发现的订阅源，不会为任意网页生成 RSS。需要登录、验证码或受源站访问限制的网站，仍可能无法订阅。</p>
+<h2>如何更新</h2>
+<p><strong>请安装 0.2.4 完整安装包。</strong> 本次修复位于应用核心，仅安装界面小更新无法获得。保留原有阅读数据，安装后可重新刷新此前失败的网页订阅，或重新添加地址。</p>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_x64-setup.exe">Windows 0.2.4 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4.exe">Windows 0.2.4 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4_arm64.apk">Android 0.2.4 ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_amd64.deb">Linux 0.2.4 x86_64 DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.2.4-1.x86_64.rpm">Linux 0.2.4 x86_64 RPM</a></li>
+</ul>
+<p><a href="https://darastas.github.io/#download">官网下载区</a>提供 SHA-256 校验值与 Linux 终端安装命令。Linux 继续为 Beta，需要 glibc 2.34 或更新版本及 WebKitGTK 4.1。</p>
+<h2>验证范围</h2>
+<p>发布前完成本地回归、三端安装包构建及公开下载校验；Windows 真实客户端验证太隐文章链接的订阅发现、文章入库与后续刷新，Linux 验证隔离启动。Android 本轮未连接实机或模拟器，设备端覆盖安装和订阅操作仍待验证。</p>]]></description><content:encoded><![CDATA[<p><strong>FocusFeed 0.2.4 改善订阅地址识别。</strong> 添加订阅时，除了直接填写 RSS、Atom 或 JSON Feed 地址，也可以粘贴网站首页或文章链接，应用会尝试查找该网站提供的订阅源。</p>
+<h2>修复网页地址订阅失败</h2>
+<p>此前，一些网站的文章链接会提示 <code>Feed 解析失败: unable to parse feed: no root element</code>。原因是该地址返回网页，而应用直接按订阅源解析。</p>
+<ul>
+<li>现在会查找网页中声明的订阅链接；文章页没有声明时，继续查找网站首页及常见订阅路径。</li>
+<li>支持相对订阅链接、网页基址与地址跳转，保留稳定的订阅入口，便于后续同步。</li>
+<li>例如太隐网站的文章链接可找到其订阅源 <a href="https://wangyurui.com/feed.xml">wangyurui.com/feed.xml</a>。</li>
+<li>自动识别成功后，原订阅条目使用真实源地址，保留分组、解析模式、收藏和已读状态。</li>
+<li>改善重复源识别，处理粘贴地址末尾误带的常见中文标点。</li>
+</ul>
+<p><strong>文章链接会订阅该网站的更新。</strong> 该篇文章是否出现，取决于网站订阅源提供的文章范围；此功能不等同于保存单篇网页。</p>
+<h2>没找到订阅源时，说明原因</h2>
+<p>未发现可用源时，应用会提示检查网站是否提供 RSS、Atom 或 JSON Feed，并尝试填写实际订阅地址。</p>
+<p>此功能需要网站提供可发现的订阅源，不会为任意网页生成 RSS。需要登录、验证码或受源站访问限制的网站，仍可能无法订阅。</p>
+<h2>如何更新</h2>
+<p><strong>请安装 0.2.4 完整安装包。</strong> 本次修复位于应用核心，仅安装界面小更新无法获得。保留原有阅读数据，安装后可重新刷新此前失败的网页订阅，或重新添加地址。</p>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_x64-setup.exe">Windows 0.2.4 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4.exe">Windows 0.2.4 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4_arm64.apk">Android 0.2.4 ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_amd64.deb">Linux 0.2.4 x86_64 DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.2.4-1.x86_64.rpm">Linux 0.2.4 x86_64 RPM</a></li>
+</ul>
+<p><a href="https://darastas.github.io/#download">官网下载区</a>提供 SHA-256 校验值与 Linux 终端安装命令。Linux 继续为 Beta，需要 glibc 2.34 或更新版本及 WebKitGTK 4.1。</p>
+<h2>验证范围</h2>
+<p>发布前完成本地回归、三端安装包构建及公开下载校验；Windows 真实客户端验证太隐文章链接的订阅发现、文章入库与后续刷新，Linux 验证隔离启动。Android 本轮未连接实机或模拟器，设备端覆盖安装和订阅操作仍待验证。</p>]]></content:encoded></item>
+<item><title>FocusFeed 0.2.3：系统托盘、备份恢复与朗读进度</title><link>https://darastas.github.io/announcements/release-0-2-3.html</link><guid isPermaLink="false">urn:focusfeed:release:0.2.3</guid><pubDate>Thu, 15 Oct 2026 09:40:46 GMT</pubDate><category>v0.2.3</category><description><![CDATA[<p><strong>FocusFeed 0.2.3 加入系统托盘与单文件备份恢复，并改进 AI 朗读进度。</strong> Windows、Android 和 Linux 均提供新版安装包。朗读界面也提供签名小更新，方便仍在使用旧版核心的用户获取改进。</p>
 <h2>桌面端收起到托盘</h2>
 <ul>
 <li>进入<strong>设置 → 通用</strong>，可开启最小化或关闭窗口后收起到托盘，开关默认关闭。</li>

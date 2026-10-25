@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f9f7f3" />
-    <meta name="description" content="FocusFeed 是一款本地优先的 RSS 与电子书阅读器。支持可选启动预加载、播客与音视频播放、按需加载 YouTube、定时同步、界面小更新和个人离线许可。下载 Windows、Android 与 Linux Beta，支持 Linux 终端安装。" />
+    <meta name="description" content="FocusFeed 是一款本地优先的 RSS 与电子书阅读器，支持网页订阅源识别。支持可选启动预加载、播客与音视频播放、按需加载 YouTube、定时同步、界面小更新和个人离线许可。下载 Windows、Android 与 Linux Beta，支持 Linux 终端安装。" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="FocusFeed — 把注意力还给阅读" />
     <meta property="og:description" content="本地优先的 RSS 与电子书阅读器。可选启动预加载、播客播放、界面小更新、个人离线许可、高亮批注与 BYOK AI，支持 Windows、Android 与 Linux Beta。" />
@@ -64,6 +64,7 @@
             <h3>文章与电子书，<br />同一种专注。</h3>
             <p>在宽屏上展开双页阅读，留出恰到好处的文字空间。</p>
             <ul class="feature-details">
+              <li>添加订阅时可粘贴订阅源、网站首页或文章链接；0.2.4 会自动查找网站提供的 RSS、Atom 或 JSON Feed。网站需有可发现的订阅源。</li>
               <li>双页、翻页与滚动阅读，按你的习惯选择。</li>
               <li>字号、行距和阅读宽度都可调整。</li>
               <li>文章与电子书分开整理，使用同一套阅读工具。</li>
@@ -185,40 +186,40 @@
           <div class="download-header">
             <span class="section-number">05 / DOWNLOAD</span>
             <h2 id="download-title">开始阅读。</h2>
-            <p>Windows、Android 与 Linux Beta 提供 0.2.3 安装包，新增系统托盘与单文件备份恢复，并改进朗读进度和原文预览。朗读改进也可通过「设置 → 关于 → 界面小更新」获取；托盘与备份恢复需安装整包。<a href="/announcements/release-0-2-3.html">查看版本说明 ↗</a> 安装包由 Cloudflare 提供下载。</p>
+            <p>Windows、Android 与 Linux Beta 提供 0.2.4 安装包，修复网页地址订阅失败：粘贴首页或文章链接后，自动查找网站提供的 RSS、Atom 或 JSON Feed。请安装完整新版以获得此修复。<a href="/announcements/release-0-2-4.html">查看版本说明 ↗</a> 安装包由 Cloudflare 提供下载。</p>
           </div>
           <div class="download-list">
-            <article class="download-item" data-platform="windows" data-version="0.2.3">
-              <div><span class="download-system">WINDOWS · X64</span><h3>安装版</h3><p>Windows 0.2.3 · 标准安装程序 · 10.6 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.3_x64-setup.exe?rev=D6C36CA372E26161">下载 EXE <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="D6C36CA372E26161578EC1A73F5368E8EFFC2AC6098B71C515C98B88CB03D423" aria-label="复制 Windows 安装版 SHA-256">SHA-256 <span>D6C36CA3…</span></button>
+            <article class="download-item" data-platform="windows" data-version="0.2.4">
+              <div><span class="download-system">WINDOWS · X64</span><h3>安装版</h3><p>Windows 0.2.4 · 标准安装程序 · 10.7 MiB</p></div>
+              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_x64-setup.exe?rev=C2E62050936ACF99">下载 EXE <span aria-hidden="true">↗</span></a>
+              <button class="hash-button" type="button" data-hash="C2E62050936ACF990747F880B9D5E794CDBC0476F12F6F89F349D35BDC1F6DF5" aria-label="复制 Windows 安装版 SHA-256">SHA-256 <span>C2E62050…</span></button>
             </article>
-            <article class="download-item" data-platform="windows" data-version="0.2.3">
-              <div><span class="download-system">WINDOWS · X64</span><h3>便携版</h3><p>Windows 0.2.3 · 独立运行文件 · 35.9 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.3.exe?rev=7BB795B363862844">下载 EXE <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="7BB795B3638628444CA395395D9F2701AAD9BC978D3B2AA50D84AE008FC473DE" aria-label="复制 Windows 便携版 SHA-256">SHA-256 <span>7BB795B3…</span></button>
+            <article class="download-item" data-platform="windows" data-version="0.2.4">
+              <div><span class="download-system">WINDOWS · X64</span><h3>便携版</h3><p>Windows 0.2.4 · 独立运行文件 · 36.1 MiB</p></div>
+              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4.exe?rev=ACA078CBC2BD1935">下载 EXE <span aria-hidden="true">↗</span></a>
+              <button class="hash-button" type="button" data-hash="ACA078CBC2BD193556E875D67830022E1D3384115B7B4CEBF250CC5ADDEB2815" aria-label="复制 Windows 便携版 SHA-256">SHA-256 <span>ACA078CB…</span></button>
             </article>
-            <article class="download-item" data-platform="android" data-version="0.2.3">
-              <div><span class="download-system">ANDROID · ARM64</span><h3>安卓版</h3><p>Android 0.2.3 · APK · 45.3 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.3_arm64.apk?rev=AF62B491F0981CC4">下载 APK <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="AF62B491F0981CC4CEDE68FC6402A6BE3085832EBB3697303590A9EF310115B4" aria-label="复制 Android 版 SHA-256">SHA-256 <span>AF62B491…</span></button>
-            </article>
-            <article class="download-item">
-              <div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.3 Beta · DEB</h3><p>Linux Mint / Ubuntu / Debian · 17.1 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.3_amd64.deb?rev=d7fcc64b7b96b24f">下载 DEB <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="d7fcc64b7b96b24f61001bf358536f94eb4067f56d3ca46c78ecd2fd8fa6a081" aria-label="复制 Linux Beta DEB SHA-256">SHA-256 <span>d7fcc64b…</span></button>
+            <article class="download-item" data-platform="android" data-version="0.2.4">
+              <div><span class="download-system">ANDROID · ARM64</span><h3>安卓版</h3><p>Android 0.2.4 · APK · 45.4 MiB</p></div>
+              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4_arm64.apk?rev=BB2AE2A865D74536">下载 APK <span aria-hidden="true">↗</span></a>
+              <button class="hash-button" type="button" data-hash="BB2AE2A865D74536DE303F6F7DB6523B3F92079AE46B81A5EC31BE0C7C93EA37" aria-label="复制 Android 版 SHA-256">SHA-256 <span>BB2AE2A8…</span></button>
             </article>
             <article class="download-item">
-              <div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.3 Beta · RPM</h3><p>Fedora / 支持 RPM 的发行版 · 17.1 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.2.3-1.x86_64.rpm?rev=2928ed8e2458fc7b">下载 RPM <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="2928ed8e2458fc7b77b243be6619c1d87244ac348cac10b950c5d1b337001522" aria-label="复制 Linux Beta RPM SHA-256">SHA-256 <span>2928ed8e…</span></button>
+              <div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.4 Beta · DEB</h3><p>Linux Mint / Ubuntu / Debian · 16.7 MiB</p></div>
+              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_amd64.deb?rev=cddf83eb8128504b">下载 DEB <span aria-hidden="true">↗</span></a>
+              <button class="hash-button" type="button" data-hash="cddf83eb8128504b08e9c9e8307f0460ab1a05f1b1ddef932ba477d0a8e6c247" aria-label="复制 Linux Beta DEB SHA-256">SHA-256 <span>cddf83eb…</span></button>
+            </article>
+            <article class="download-item">
+              <div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.4 Beta · RPM</h3><p>Fedora / 支持 RPM 的发行版 · 16.7 MiB</p></div>
+              <a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.2.4-1.x86_64.rpm?rev=24f6c3ae3a5f8cd2">下载 RPM <span aria-hidden="true">↗</span></a>
+              <button class="hash-button" type="button" data-hash="24f6c3ae3a5f8cd2df659fa0c44e9f26b8dc124d176af2f5a53527c5d9c4a3bb" aria-label="复制 Linux Beta RPM SHA-256">SHA-256 <span>24f6c3ae…</span></button>
             </article>
           </div>
           <!-- linux-install:start -->
           <section class="linux-install" aria-labelledby="linux-install-title">
             <span class="download-system">LINUX · X86_64 · BETA</span>
             <h3 id="linux-install-title">在终端安装。</h3>
-            <p>复制这条命令，自动选择 DEB / RPM、校验 SHA-256 并安装 Linux 0.2.3 Beta。支持 Linux Mint、Ubuntu、Debian（apt）与 Fedora（dnf）。</p>
+            <p>复制这条命令，自动选择 DEB / RPM、校验 SHA-256 并安装 Linux 0.2.4 Beta。支持 Linux Mint、Ubuntu、Debian（apt）与 Fedora（dnf）。</p>
             <div class="terminal-command">
               <pre><code id="linux-install-command">curl -fsSL https://focusfeed-site.pages.dev/install.sh | sh</code></pre>
               <button class="command-button" type="button" data-copy-target="linux-install-command">复制命令</button>
@@ -228,16 +229,16 @@
               <summary>查看手动安装命令</summary>
               <p>Linux Mint / Ubuntu / Debian</p>
               <div class="terminal-command">
-                <pre><code id="linux-deb-command">curl -fL --proto '=https' --proto-redir '=https' 'https://focusfeed-site.pages.dev/download/FocusFeed_0.2.3_amd64.deb?rev=d7fcc64b7b96b24f61001bf358536f94eb4067f56d3ca46c78ecd2fd8fa6a081' -o 'FocusFeed_0.2.3_amd64.deb' &amp;&amp;
-printf '%s  %s\n' 'd7fcc64b7b96b24f61001bf358536f94eb4067f56d3ca46c78ecd2fd8fa6a081' 'FocusFeed_0.2.3_amd64.deb' | sha256sum -c - &amp;&amp;
-sudo apt-get install --yes --allow-downgrades --reinstall './FocusFeed_0.2.3_amd64.deb'</code></pre>
+                <pre><code id="linux-deb-command">curl -fL --proto '=https' --proto-redir '=https' 'https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_amd64.deb?rev=cddf83eb8128504b08e9c9e8307f0460ab1a05f1b1ddef932ba477d0a8e6c247' -o 'FocusFeed_0.2.4_amd64.deb' &amp;&amp;
+printf '%s  %s\n' 'cddf83eb8128504b08e9c9e8307f0460ab1a05f1b1ddef932ba477d0a8e6c247' 'FocusFeed_0.2.4_amd64.deb' | sha256sum -c - &amp;&amp;
+sudo apt-get install --yes --allow-downgrades --reinstall './FocusFeed_0.2.4_amd64.deb'</code></pre>
                 <button class="command-button" type="button" data-copy-target="linux-deb-command">复制 DEB 命令</button>
               </div>
               <p>Fedora（dnf）</p>
               <div class="terminal-command">
-                <pre><code id="linux-rpm-command">curl -fL --proto '=https' --proto-redir '=https' 'https://focusfeed-site.pages.dev/download/FocusFeed-0.2.3-1.x86_64.rpm?rev=2928ed8e2458fc7b77b243be6619c1d87244ac348cac10b950c5d1b337001522' -o 'FocusFeed-0.2.3-1.x86_64.rpm' &amp;&amp;
-printf '%s  %s\n' '2928ed8e2458fc7b77b243be6619c1d87244ac348cac10b950c5d1b337001522' 'FocusFeed-0.2.3-1.x86_64.rpm' | sha256sum -c - &amp;&amp;
-sudo dnf install './FocusFeed-0.2.3-1.x86_64.rpm'</code></pre>
+                <pre><code id="linux-rpm-command">curl -fL --proto '=https' --proto-redir '=https' 'https://focusfeed-site.pages.dev/download/FocusFeed-0.2.4-1.x86_64.rpm?rev=24f6c3ae3a5f8cd2df659fa0c44e9f26b8dc124d176af2f5a53527c5d9c4a3bb' -o 'FocusFeed-0.2.4-1.x86_64.rpm' &amp;&amp;
+printf '%s  %s\n' '24f6c3ae3a5f8cd2df659fa0c44e9f26b8dc124d176af2f5a53527c5d9c4a3bb' 'FocusFeed-0.2.4-1.x86_64.rpm' | sha256sum -c - &amp;&amp;
+sudo dnf install './FocusFeed-0.2.4-1.x86_64.rpm'</code></pre>
                 <button class="command-button" type="button" data-copy-target="linux-rpm-command">复制 RPM 命令</button>
               </div>
               <p class="install-hint">RPM 已安装同版时，将 install 改为 reinstall；误标的 0.17.0 需改为 downgrade。安装后从应用菜单启动，或以普通用户运行 <code>rss-cross-app</code>。</p>
@@ -246,7 +247,7 @@ sudo dnf install './FocusFeed-0.2.3-1.x86_64.rpm'</code></pre>
           </section>
           <!-- linux-install:end -->
           <p class="download-note">Windows 文件暂未进行代码签名，系统可能显示“未知发布者”；安装前可核对上方 SHA-256。Android 版需要 ARM64 设备，并允许安装来自浏览器的 APK。</p>
-          <p class="download-note">Linux 0.2.3 为 Beta 测试版，需要 x86_64、glibc 2.34 或更新版本和 WebKitGTK 4.1。使用 apt 或 dnf 安装可自动解析依赖；动画、字体切换与高刷新率表现仍需在实际桌面环境中验证。</p>
+          <p class="download-note">Linux 0.2.4 为 Beta 测试版，需要 x86_64、glibc 2.34 或更新版本和 WebKitGTK 4.1。使用 apt 或 dnf 安装可自动解析依赖；动画、字体切换与高刷新率表现仍需在实际桌面环境中验证。</p>
         </div>
       </section>
     </main>

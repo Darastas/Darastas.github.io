@@ -3,12 +3,12 @@
 # Download the script without sudo; only the package manager needs root.
 set -eu
 
-version='0.2.3'
-package_version='0.2.3'
-deb_file='FocusFeed_0.2.3_amd64.deb'
-deb_sha256='d7fcc64b7b96b24f61001bf358536f94eb4067f56d3ca46c78ecd2fd8fa6a081'
-rpm_file='FocusFeed-0.2.3-1.x86_64.rpm'
-rpm_sha256='2928ed8e2458fc7b77b243be6619c1d87244ac348cac10b950c5d1b337001522'
+version='0.2.4'
+package_version='0.2.4'
+deb_file='FocusFeed_0.2.4_amd64.deb'
+deb_sha256='cddf83eb8128504b08e9c9e8307f0460ab1a05f1b1ddef932ba477d0a8e6c247'
+rpm_file='FocusFeed-0.2.4-1.x86_64.rpm'
+rpm_sha256='24f6c3ae3a5f8cd2df659fa0c44e9f26b8dc124d176af2f5a53527c5d9c4a3bb'
 download_base='https://focusfeed-site.pages.dev/download'
 
 fail() {

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="修复文章链接或网站首页被直接当作 Feed 解析而报错的问题，自动查找网站提供的 RSS、Atom 和 JSON Feed，改善订阅错误提示。Windows、Android 与 Linux 同步更新。" /><title>FocusFeed 0.2.4：粘贴网页地址，自动查找订阅源 — FocusFeed</title><link rel="icon" href="/favicon.svg" /><link rel="stylesheet" href="/styles.css" /><link rel="alternate" type="application/rss+xml" title="FocusFeed 官方公告" href="https://darastas.github.io/announcements.xml" /></head>
+<body><a class="skip-link" href="#main">跳转到正文</a><header class="site-header"><div class="header-inner wrap"><a class="brand" href="/"><img src="/favicon.svg" alt="" width="32" height="32" /><span>FocusFeed</span></a><nav id="main-nav" class="main-nav" aria-label="主导航"><a href="/">官网</a><a href="/rsshub.html">生成 RSS</a><a href="/announcements/" aria-current="page">公告</a></nav><button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">菜单</button><a class="header-download" href="https://darastas.github.io/announcements.xml">订阅公告 RSS ↗</a></div></header>
+<main id="main" class="announcement-page wrap announcement-detail"><a class="announcement-back" href="/announcements/">← 全部公告</a><article><header><div class="announcement-meta"><time datetime="2026-10-25T13:50:34Z">2026-10-25</time><span class="announcement-version">v0.2.4</span></div><h1>FocusFeed 0.2.4：粘贴网页地址，自动查找订阅源</h1><p>修复文章链接或网站首页被直接当作 Feed 解析而报错的问题，自动查找网站提供的 RSS、Atom 和 JSON Feed，改善订阅错误提示。Windows、Android 与 Linux 同步更新。</p></header><div class="article-body"><p><strong>FocusFeed 0.2.4 改善订阅地址识别。</strong> 添加订阅时，除了直接填写 RSS、Atom 或 JSON Feed 地址，也可以粘贴网站首页或文章链接，应用会尝试查找该网站提供的订阅源。</p>
+<h2>修复网页地址订阅失败</h2>
+<p>此前，一些网站的文章链接会提示 <code>Feed 解析失败: unable to parse feed: no root element</code>。原因是该地址返回网页，而应用直接按订阅源解析。</p>
+<ul>
+<li>现在会查找网页中声明的订阅链接；文章页没有声明时，继续查找网站首页及常见订阅路径。</li>
+<li>支持相对订阅链接、网页基址与地址跳转，保留稳定的订阅入口，便于后续同步。</li>
+<li>例如太隐网站的文章链接可找到其订阅源 <a href="https://wangyurui.com/feed.xml">wangyurui.com/feed.xml</a>。</li>
+<li>自动识别成功后，原订阅条目使用真实源地址，保留分组、解析模式、收藏和已读状态。</li>
+<li>改善重复源识别，处理粘贴地址末尾误带的常见中文标点。</li>
+</ul>
+<p><strong>文章链接会订阅该网站的更新。</strong> 该篇文章是否出现，取决于网站订阅源提供的文章范围；此功能不等同于保存单篇网页。</p>
+<h2>没找到订阅源时，说明原因</h2>
+<p>未发现可用源时，应用会提示检查网站是否提供 RSS、Atom 或 JSON Feed，并尝试填写实际订阅地址。</p>
+<p>此功能需要网站提供可发现的订阅源，不会为任意网页生成 RSS。需要登录、验证码或受源站访问限制的网站，仍可能无法订阅。</p>
+<h2>如何更新</h2>
+<p><strong>请安装 0.2.4 完整安装包。</strong> 本次修复位于应用核心，仅安装界面小更新无法获得。保留原有阅读数据，安装后可重新刷新此前失败的网页订阅，或重新添加地址。</p>
+<ul>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_x64-setup.exe">Windows 0.2.4 安装版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4.exe">Windows 0.2.4 便携版</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4_arm64.apk">Android 0.2.4 ARM64 APK</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_amd64.deb">Linux 0.2.4 x86_64 DEB</a></li>
+<li><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.2.4-1.x86_64.rpm">Linux 0.2.4 x86_64 RPM</a></li>
+</ul>
+<p><a href="https://darastas.github.io/#download">官网下载区</a>提供 SHA-256 校验值与 Linux 终端安装命令。Linux 继续为 Beta，需要 glibc 2.34 或更新版本及 WebKitGTK 4.1。</p>
+<h2>验证范围</h2>
+<p>发布前完成本地回归、三端安装包构建及公开下载校验；Windows 真实客户端验证太隐文章链接的订阅发现、文章入库与后续刷新，Linux 验证隔离启动。Android 本轮未连接实机或模拟器，设备端覆盖安装和订阅操作仍待验证。</p></div></article></main><footer class="site-footer wrap"><div class="footer-brand"><img src="/favicon.svg" alt="" width="28" height="28" /><span>FocusFeed</span></div><p>把注意力还给阅读。</p><a href="/">返回官网 ↑</a></footer><script type="module" src="/navigation.js"></script></body></html>
