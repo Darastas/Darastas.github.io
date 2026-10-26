@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f5f0" />
+    <meta name="theme-color" content="#f7f7f5" />
     <meta name="description" content="FocusFeed 是一款本地优先的 RSS 与电子书阅读器，支持网页订阅源识别、高亮批注、音视频、定时同步与 BYOK AI。下载 Windows、Android 与 Linux Beta。" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="FocusFeed — 把注意力还给阅读" />
     <meta property="og:description" content="本地优先的 RSS 与电子书阅读器。订阅、阅读、整理与理解，在一个安静的空间里自然发生。" />
     <meta property="og:image" content="/assets/devices.png" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20261026-2" />
+    <link rel="stylesheet" href="/styles.css?v=20261026-4" />
     <link rel="alternate" type="application/rss+xml" title="FocusFeed 官方公告" href="https://darastas.github.io/announcements.xml" />
     <title>FocusFeed — 把注意力还给阅读</title>
     <!-- Cloudflare Web Analytics -->
@@ -21,16 +21,8 @@
     <a class="skip-link" href="#main">跳转到正文</a>
     <header class="site-header">
       <div class="header-inner wrap">
-        <a class="brand" href="#top" aria-label="FocusFeed 首页">
-          <img src="/favicon.svg" alt="" width="32" height="32" />
-          <span>FocusFeed</span>
-        </a>
-        <nav id="main-nav" class="main-nav" aria-label="主导航">
-          <a href="#features">功能体验</a>
-          <a href="#demo">真实录屏</a>
-          <a href="/rsshub.html">生成 RSS</a>
-          <a href="/announcements/">公告</a>
-        </nav>
+        <a class="brand" href="#top" aria-label="FocusFeed 首页"><img src="/favicon.svg" alt="" width="32" height="32" /><span>FocusFeed</span></a>
+        <nav id="main-nav" class="main-nav" aria-label="主导航"><a href="#features">功能体验</a><a href="#demo">真实录屏</a><a href="/rsshub.html">生成 RSS</a><a href="/announcements/">公告</a></nav>
         <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">菜单</button>
         <a class="header-download" href="#download">下载应用 <span aria-hidden="true">↗</span></a>
       </div>
@@ -41,240 +33,179 @@
         <div class="hero-sticky">
           <div class="hero-intro">
             <img class="intro-icon" src="/favicon.svg" alt="" width="112" height="112" />
-            <div class="hero-heading">
-              <p>本地优先的 RSS 与电子书阅读器</p>
-              <h1 id="hero-title">把注意力<br />还给阅读。</h1>
-            </div>
-            <div class="hero-description">
-              <p>订阅、阅读、整理与理解，在一个安静的空间里自然发生。你的内容与阅读记录，首先留在你的设备上。</p>
-              <a class="text-link" href="#download">下载 FocusFeed <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="hero-fragments" aria-hidden="true">
-            <span class="fragment fragment-rss">RSS</span>
-            <span class="fragment fragment-book">EPUB</span>
-            <span class="fragment fragment-ai">AI</span>
-            <span class="fragment fragment-local">本地</span>
+            <div class="hero-heading"><p>本地优先的 RSS 与电子书阅读器</p><h1 id="hero-title">把注意力<br />还给阅读。</h1></div>
+            <div class="hero-description"><p>订阅、阅读、整理与理解，在一个安静的空间里自然发生。你的内容与阅读记录，首先留在你的设备上。</p><a class="text-link" href="#download">下载 FocusFeed <span aria-hidden="true">↗</span></a></div>
           </div>
           <img class="flying-mark" src="/favicon.svg" alt="" width="112" height="112" aria-hidden="true" />
-          <div class="app-shell" data-app-font="medium">
-            <div class="app-topbar">
-              <div class="app-brand"><img src="/favicon.svg" alt="" width="28" height="28" /><strong>FocusFeed</strong></div>
-              <div class="app-views" role="tablist" aria-label="阅读器界面示例">
-                <button type="button" role="tab" id="app-tab-reading" aria-controls="app-panel-reading" aria-selected="true" data-app-view="reading">阅读</button>
-                <button type="button" role="tab" id="app-tab-book" aria-controls="app-panel-book" aria-selected="false" tabindex="-1" data-app-view="book">书籍</button>
-                <button type="button" role="tab" id="app-tab-notes" aria-controls="app-panel-notes" aria-selected="false" tabindex="-1" data-app-view="notes">笔记</button>
-              </div>
-              <button class="app-theme" type="button" aria-pressed="false">深色</button>
-            </div>
-            <div class="app-workspace">
-              <aside class="app-library" aria-label="示例文章列表">
-                <div class="library-heading"><strong>今天</strong><span>3 篇未读</span></div>
-                <button class="article-item active" type="button" data-article="0">
-                  <span>独立博客</span><strong>重新拥有自己的信息入口</strong><small>8 分钟 · 未读</small>
-                </button>
-                <button class="article-item" type="button" data-article="1">
-                  <span>设计观察</span><strong>留白不是空，而是节奏</strong><small>5 分钟 · 未读</small>
-                </button>
-                <button class="article-item" type="button" data-article="2">
-                  <span>效率笔记</span><strong>把稍后读变成真正读过</strong><small>6 分钟 · 未读</small>
-                </button>
-                <div class="library-local"><i aria-hidden="true"></i>阅读数据已保存在本机</div>
+          <div class="app-shell">
+            <div class="window-titlebar" aria-hidden="true"><img class="window-brand" src="/favicon.svg" alt="" width="20" height="20" /><span class="window-fullscreen">↗</span><span class="window-controls">— &nbsp; □ &nbsp; ×</span></div>
+            <div class="app-island">
+              <aside class="app-sidebar">
+                <header class="sidebar-brand"><img src="/favicon.svg" alt="" width="32" height="32" /><strong>FocusFeed</strong></header>
+                <nav class="sidebar-nav" aria-label="应用界面示例导航">
+                  <div>全部文章</div><div>未读 <span>3</span></div><div>今日未读</div><div>收藏</div><div>最近阅读 <small>Pro</small></div>
+                </nav>
+                <div class="sidebar-rule"></div>
+                <div class="official-feed"><img src="/favicon.svg" alt="" width="18" height="18" /><span>FocusFeed 官方公告</span><small>3</small></div>
+                <div class="sidebar-book">电子书</div>
+                <footer class="sidebar-footer"><span>界面交互示例</span><button class="app-theme" type="button" aria-pressed="false">深色</button></footer>
               </aside>
-              <div class="app-content">
-                <article class="app-panel article-page" id="app-panel-reading" role="tabpanel" aria-labelledby="app-tab-reading" data-app-panel="reading">
-                  <p class="article-source" id="app-article-source">独立博客 · 今天 09:30</p>
-                  <h2 id="app-article-title">重新拥有自己的信息入口</h2>
-                  <p class="article-lead" id="app-article-lead">当订阅列表由自己决定，阅读就不再被下一次刷新牵着走。</p>
-                  <p id="app-article-body">RSS 把网站更新带回一个简单的入口。没有热度排行，也不必追逐提醒，只有主动选择的内容和适合读完它的时间。</p>
-                  <div class="app-summary" id="app-summary" hidden><strong>摘要示例</strong><p>主动选择信息来源，用稳定的订阅列表代替不断刷新的信息流。</p></div>
-                </article>
-                <section class="app-panel book-page" id="app-panel-book" role="tabpanel" aria-labelledby="app-tab-book" data-app-panel="book" hidden>
-                  <div class="book-spread">
-                    <div><span>第三章</span><h2>慢一点的阅读</h2><p>纸张有边界，注意力也有。双页视图把章节摊开，让每一次翻页都有明确的起点与终点。</p></div>
-                    <div><p>字号、行距与页宽都可以调整。无论是电脑上的宽屏，还是手边的一块小屏幕，文字始终保持舒服的节奏。</p><p>阅读进度保存在设备上，下次打开，从上一次停下的地方继续。</p></div>
-                  </div>
-                </section>
-                <section class="app-panel notes-page" id="app-panel-notes" role="tabpanel" aria-labelledby="app-tab-notes" data-app-panel="notes" hidden>
-                  <p class="article-source">《重新拥有自己的信息入口》</p>
-                  <blockquote>“只有主动选择的内容，和适合读完它的时间。”</blockquote>
-                  <h2>我的批注</h2>
-                  <p>保留这句话，作为整理订阅列表时的原则：少一点来源，多一点读完。</p>
-                  <div class="note-meta"><span>朱砂高亮</span><span>可导出 Markdown / HTML</span></div>
-                </section>
-              </div>
-              <aside class="app-tools" aria-label="阅读设置示例">
-                <span>字号</span>
-                <div class="font-control">
-                  <button type="button" data-app-font="small" aria-pressed="false">小</button>
-                  <button type="button" data-app-font="medium" aria-pressed="true">中</button>
-                  <button type="button" data-app-font="large" aria-pressed="false">大</button>
+              <div class="column-resizer" aria-hidden="true"></div>
+              <section class="article-list" aria-label="官方公告文章列表">
+                <header><h2>FocusFeed 官方公告</h2><label><span class="sr-only">搜索公告标题</span><input id="article-search" type="search" placeholder="搜索标题…" autocomplete="off" /></label></header>
+                <div class="article-items">
+                  <button class="article-item active" type="button" data-article="0"><span class="unread-dot"></span><strong>FocusFeed 0.2.4：粘贴网页地址，自动查找订阅源</strong><small>FocusFeed 官方公告 · 10 月 25 日</small><p>自动查找网站提供的 RSS、Atom 和 JSON Feed。</p></button>
+                  <button class="article-item" type="button" data-article="1"><span class="unread-dot"></span><strong>FocusFeed 0.2.3：系统托盘、备份恢复与朗读进度</strong><small>FocusFeed 官方公告 · 10 月 15 日</small><p>桌面托盘、单文件备份恢复与朗读进度控制。</p></button>
+                  <button class="article-item" type="button" data-article="2"><span class="unread-dot"></span><strong>FocusFeed 0.2.2.1：可选启动预加载与外链打开修复</strong><small>FocusFeed 官方公告 · 10 月 12 日</small><p>启动预加载默认关闭，正文外链交给系统浏览器。</p></button>
                 </div>
-                <button type="button" id="app-summary-button" aria-expanded="false" aria-controls="app-summary">查看摘要</button>
-                <p>界面示例<br />可直接操作</p>
-              </aside>
+                <p class="list-empty" id="list-empty" hidden>没有匹配的公告</p>
+              </section>
+              <div class="column-resizer" aria-hidden="true"></div>
+              <section class="reading-pane" aria-label="公告阅读区">
+                <div class="reader-toolbar">
+                  <button type="button" id="reading-settings-open">阅读设置</button><button type="button" id="hero-pen" aria-pressed="true">高亮</button><button type="button" id="zen-toggle" aria-pressed="false">专注阅读</button><span class="toolbar-spacer"></span><button type="button" id="interpret-open">解读</button><button type="button" id="summary-open">摘要</button>
+                </div>
+                <div class="article-scroll">
+                  <article class="article-inner" id="article-inner">
+                    <h2 id="app-article-title">FocusFeed 0.2.4：粘贴网页地址，自动查找订阅源</h2>
+                    <p class="article-meta" id="app-article-meta">FocusFeed 官方公告 · 2026 年 10 月 25 日</p>
+                    <div class="article-separator"></div>
+                    <section class="ai-result popover" id="summary-card" data-state="closed" aria-label="摘要预制示例" hidden>
+                      <header><strong>摘要 · 预制示例</strong><span></span><button type="button" id="summary-minimize" aria-label="最小化摘要">−</button><button type="button" id="summary-close" aria-label="关闭摘要">×</button></header>
+                      <p class="summary-text" id="summary-text"></p><button class="summary-expand" type="button" id="summary-expand">展开</button>
+                    </section>
+                    <button class="ai-ball summary-ball" type="button" id="summary-ball" aria-label="恢复摘要" hidden>AI</button>
+                    <div class="article-body" id="app-article-body">
+                      <p><strong>FocusFeed 0.2.4 改善订阅地址识别。</strong> 除了直接填写 RSS、Atom 或 JSON Feed 地址，也可以粘贴网站首页或文章链接。</p>
+                      <h3>修复网页地址订阅失败</h3>
+                      <p>应用会查找网页中声明的订阅链接；文章页没有声明时，继续查找网站首页及常见订阅路径。<span class="ff-mark">候选地址必须实际解析成 Feed，网页本身不会被当成订阅源。</span></p>
+                      <p>文章链接会订阅该网站的更新，不等同于保存单篇网页。找不到可解析的订阅源时，也会明确说明原因。</p>
+                    </div>
+                  </article>
+                </div>
+                <section class="float-win interpret-window" id="interpret-window" role="dialog" aria-label="深度解读预制示例" data-state="open" hidden>
+                  <header id="interpret-drag"><strong>深度解读 · 预制示例</strong><span></span><button type="button" id="interpret-minimize" aria-label="最小化解读窗口">−</button><button type="button" id="interpret-close" aria-label="关闭解读窗口">×</button></header>
+                  <div class="interpret-content"><p>这次更新的关键不是“把网页变成 RSS”，而是从网页提供的声明中找到真实订阅地址，并验证它能被解析。</p><p>因此，官网首页和公告文章页都能发现同一个公告 RSS。软件已经内置 FocusFeed 公告，不需要再重复订阅。</p></div>
+                </section>
+                <button class="ai-ball interpret-ball" type="button" id="interpret-ball" aria-label="恢复解读窗口" hidden>AI</button>
+                <div class="dialog-backdrop" id="reading-settings-modal" hidden>
+                  <section class="reading-settings popover" role="dialog" aria-modal="true" aria-labelledby="reading-settings-title" data-state="open">
+                    <header><h2 id="reading-settings-title">阅读设置</h2><button type="button" id="reading-settings-close" aria-label="关闭阅读设置">×</button></header>
+                    <div class="settings-section"><div class="align-control"><span>文字对齐</span><button type="button" data-reading-align="left" aria-pressed="true">左</button><button type="button" data-reading-align="center" aria-pressed="false">居中</button><button type="button" data-reading-align="right" aria-pressed="false">右</button><button type="button" data-reading-align="justify" aria-pressed="false">两端</button></div>
+                      <label>字号 <input type="range" min="12" max="24" step="1" value="17" data-reading="fontSize" /><output>17px</output></label>
+                      <label>字重 <input type="range" min="300" max="700" step="100" value="400" data-reading="fontWeight" /><output>400</output></label>
+                      <label>字距 <input type="range" min="0" max="0.2" step="0.01" value="0" data-reading="letterSpacing" /><output>0em</output></label>
+                      <label>行距 <input type="range" min="1.2" max="2.4" step="0.05" value="1.75" data-reading="lineHeight" /><output>1.75</output></label>
+                      <label>水平外边距 <input type="range" min="1" max="5" step="1" value="3" data-reading="marginLevel" /><output>3</output></label>
+                    </div>
+                    <footer><button type="button" id="reading-reset">重置为默认设置</button></footer>
+                  </section>
+                </div>
+              </section>
             </div>
+            <span class="theme-ripple" id="theme-ripple" hidden></span>
           </div>
           <div class="scroll-cue" aria-hidden="true"><span>向下滚动，展开阅读空间</span><i><b></b></i></div>
         </div>
       </section>
 
       <section class="feature-lab wrap" id="features" aria-labelledby="features-title">
-        <div class="section-intro">
-          <h2 id="features-title">试着，把阅读调成<br />你的样子。</h2>
-          <p>不是一张只能看的截图。点击下面的控件，体验 FocusFeed 如何适应你的阅读习惯。</p>
-        </div>
+        <div class="section-intro"><h2 id="features-title">真实界面，<br />亲手试一试。</h2><p>结构、控件和动画来自 FocusFeed 源码。网页只保留无需本地数据或模型密钥的交互，AI 内容均为预制示例。</p></div>
         <div class="lab-grid">
-          <article class="lab-card lab-reading">
-            <div class="lab-copy"><h3>字号与间距，不必迁就</h3><p>切换字号，示例文字会立即改变。</p></div>
-            <div class="segmented" aria-label="示例字号">
-              <button type="button" data-lab-font="small" aria-pressed="false">小</button>
-              <button type="button" data-lab-font="medium" aria-pressed="true">中</button>
-              <button type="button" data-lab-font="large" aria-pressed="false">大</button>
-            </div>
-            <div class="lab-reading-sample" data-size="medium"><span>阅读，是一段不被打断的时间。</span><p>好的阅读工具不会抢着吸引注意，它只让文字清楚地出现，让操作在你需要时恰好发生。</p></div>
-          </article>
-          <article class="lab-card lab-theme">
-            <div class="lab-copy"><h3>光变了，阅读也跟着变</h3><p>选择一种阅读底色。</p></div>
-            <div class="theme-choices" aria-label="示例阅读主题">
-              <button type="button" data-theme-choice="paper" aria-pressed="true"><i class="swatch-paper"></i>纸白</button>
-              <button type="button" data-theme-choice="sepia" aria-pressed="false"><i class="swatch-sepia"></i>米色</button>
-              <button type="button" data-theme-choice="dark" aria-pressed="false"><i class="swatch-dark"></i>深色</button>
-            </div>
-            <div class="theme-sample" data-theme="paper"><span>焦点</span><p>在每一个环境里，保留恰好的对比与舒适。</p></div>
-          </article>
           <article class="lab-card lab-discovery">
-            <div class="lab-copy"><h3>粘贴网页，也能找订阅源</h3><p>0.2.4 支持从网站首页或文章链接发现 RSS、Atom 与 JSON Feed。</p></div>
-            <div class="discovery-address"><span>我的部落格.example</span><i>↗</i></div>
-            <div class="discovery-actions">
-              <button type="button" data-discovery="feed">Feed 地址</button>
-              <button type="button" data-discovery="site">网站首页</button>
-              <button type="button" data-discovery="article">文章链接</button>
-            </div>
-            <p class="discovery-result" id="discovery-result" role="status">选择一种添加方式，查看识别示例。</p>
+            <div class="lab-copy"><h3>三种地址，都能找到官方公告</h3><p>切换输入方式，查看 0.2.4 的真实识别路径。</p></div>
+            <div class="discovery-actions" role="group" aria-label="公告订阅地址示例"><button type="button" data-discovery="feed" aria-pressed="true">Feed 地址</button><button type="button" data-discovery="site" aria-pressed="false">网站首页</button><button type="button" data-discovery="article" aria-pressed="false">文章链接</button></div>
+            <div class="discovery-address"><span>添加订阅</span><code id="discovery-address">https://darastas.github.io/announcements.xml</code></div>
+            <div class="discovery-result" role="status"><p id="discovery-message">原地址就是有效 RSS，直接解析为「FocusFeed 官方公告」。</p><code>https://darastas.github.io/announcements.xml</code></div>
+            <p class="lab-note">FocusFeed 已内置公告源，这里只演示识别过程，不会重复添加。网页发现也不是为任意网页生成 RSS。</p>
           </article>
+
+          <article class="lab-card lab-ai-demo">
+            <div class="lab-copy"><h3>摘要，就在标题与正文之间</h3><p>打开、最小化、恢复或关闭，使用与应用相同的弹层和小球动画。</p></div>
+            <div class="mini-reader">
+              <div class="mini-reader-heading"><h4>FocusFeed 0.2.4</h4><button type="button" id="lab-summary-open">摘要</button></div>
+              <section class="ai-result popover" id="lab-summary-card" data-state="open" aria-label="摘要预制示例"><header><strong>摘要 · 预制示例</strong><span></span><button type="button" id="lab-summary-minimize" aria-label="最小化摘要">−</button><button type="button" id="lab-summary-close" aria-label="关闭摘要">×</button></header><p class="stream-token">网页首页与文章链接都可以成为订阅入口。应用会寻找并验证网站声明的真实 Feed，最后保留稳定订阅地址，而不是把 HTML 当作 RSS。</p></section>
+              <button class="ai-ball summary-ball" type="button" id="lab-summary-ball" aria-label="恢复摘要" hidden>AI</button>
+              <p class="mini-reader-body">候选地址必须实际解析成功。公告源已经内置，重复添加会被识别。</p>
+            </div>
+            <a class="demo-link" href="#demo" data-demo-select="ai-summary">播放完整摘要录屏 ↗</a>
+          </article>
+
+          <article class="lab-card lab-window-demo">
+            <div class="lab-copy"><h3>浮窗，缩成球，再弹回来</h3><p>拖动标题栏移动窗口；最小化与恢复使用源码中的 180ms / 320ms 动画。</p></div>
+            <div class="window-playground" id="window-playground">
+              <section class="float-win lab-float-window" id="lab-float-window" role="dialog" aria-label="选中翻译预制示例" data-state="open"><header id="lab-float-drag"><strong>选中翻译 · 预制示例</strong><span></span><button type="button" id="lab-float-minimize" aria-label="最小化浮窗">−</button></header><div class="interpret-content"><p><small>原文</small>Reading should feel calm.</p><p><small>中文</small>阅读，应当是一种平静的体验。</p></div></section>
+              <button class="ai-ball interpret-ball" type="button" id="lab-float-ball" aria-label="恢复浮窗" hidden>AI</button>
+            </div>
+            <a class="demo-link" href="#demo" data-demo-select="motion">播放完整浮窗录屏 ↗</a>
+          </article>
+
+          <article class="lab-card lab-reading">
+            <div class="lab-copy"><h3>不止字号，是完整阅读排版</h3><p>字号、字重、字距、行距和水平外边距，范围与应用设置一致。</p></div>
+            <div class="lab-settings">
+              <label>字号 <input type="range" min="12" max="24" value="17" data-lab-reading="fontSize" /><output>17px</output></label>
+              <label>字重 <input type="range" min="300" max="700" step="100" value="400" data-lab-reading="fontWeight" /><output>400</output></label>
+              <label>字距 <input type="range" min="0" max="0.2" step="0.01" value="0" data-lab-reading="letterSpacing" /><output>0em</output></label>
+              <label>行距 <input type="range" min="1.2" max="2.4" step="0.05" value="1.75" data-lab-reading="lineHeight" /><output>1.75</output></label>
+              <label>水平外边距 <input type="range" min="1" max="5" step="1" value="3" data-lab-reading="marginLevel" /><output>3</output></label>
+            </div>
+            <div class="lab-reading-sample"><strong>阅读，是一段不被打断的时间。</strong><p>好的阅读工具不会抢着吸引注意，它只让文字清楚地出现，让操作在你需要时恰好发生。</p></div>
+          </article>
+
           <article class="lab-card lab-highlight">
-            <div class="lab-copy"><h3>把值得再读的留下</h3><p>选一种颜色，再高亮这句话。</p></div>
-            <div class="highlight-choices" aria-label="高亮颜色">
-              <button type="button" data-highlight-color="#efc86e" aria-label="黄色高亮" aria-pressed="true"><i></i></button>
-              <button type="button" data-highlight-color="#e99a8f" aria-label="红色高亮" aria-pressed="false"><i></i></button>
-              <button type="button" data-highlight-color="#9dbca8" aria-label="绿色高亮" aria-pressed="false"><i></i></button>
-            </div>
-            <p class="highlight-sample"><mark id="lab-highlight">信息很多，真正值得留下的，可以很少。</mark></p>
-            <button class="highlight-button" type="button" aria-pressed="true" aria-controls="lab-highlight">取消高亮</button>
+            <div class="lab-copy"><h3>五种颜色，三种标记方式</h3><p>荧光笔、直线和波浪线，使用应用的真实色板。</p></div>
+            <div class="highlight-choices" aria-label="高亮颜色"><button type="button" data-highlight-color="#f5c518" aria-label="黄色" aria-pressed="true"></button><button type="button" data-highlight-color="#7ede86" aria-label="绿色" aria-pressed="false"></button><button type="button" data-highlight-color="#6ec3ff" aria-label="蓝色" aria-pressed="false"></button><button type="button" data-highlight-color="#ff9db0" aria-label="粉色" aria-pressed="false"></button><button type="button" data-highlight-color="#d3a6ff" aria-label="紫色" aria-pressed="false"></button></div>
+            <div class="mark-styles" aria-label="标记方式"><button type="button" data-mark-style="marker" aria-pressed="true">荧光笔</button><button type="button" data-mark-style="underline" aria-pressed="false">直线</button><button type="button" data-mark-style="wavy" aria-pressed="false">波浪线</button></div>
+            <p class="highlight-sample"><span class="ff-mark" id="lab-highlight">信息很多，真正值得留下的，可以很少。</span></p>
           </article>
-          <article class="lab-card lab-ai" id="ai">
-            <div class="lab-copy"><h3>需要时，再请 AI 帮忙</h3><p>使用自己的模型与 API。摘要、翻译、解读和朗读，不替你决定读什么。</p></div>
-            <div class="ai-article"><strong>长文 · 约 12 分钟</strong><p>从信息来源、注意力到阅读习惯，一篇值得慢慢读完的文章。</p></div>
-            <button class="summary-button" type="button" aria-expanded="false" aria-controls="lab-summary">查看摘要示例</button>
-            <p class="lab-summary" id="lab-summary" hidden>从主动选择来源开始，建立更稳定、更少干扰的阅读节奏。</p>
-          </article>
-          <article class="lab-card lab-sync">
-            <div class="lab-copy"><h3>同步按你的节奏，数据留在本机</h3><p>调整同步间隔与启动预加载，看看设置如何组合。</p></div>
-            <div class="sync-controls">
-              <label>定时同步<select id="sync-interval"><option value="15">每 15 分钟</option><option value="30" selected>每 30 分钟</option><option value="60">每 1 小时</option><option value="0">关闭</option></select></label>
-              <button class="preload-toggle" type="button" role="switch" aria-checked="false"><span>启动预加载</span><i aria-hidden="true"></i></button>
-            </div>
-            <p class="sync-status" id="sync-status" role="status">每 30 分钟同步 · 启动预加载已关闭</p>
+
+          <article class="lab-card lab-theme">
+            <div class="lab-copy"><h3>明暗与主题色，都由你决定</h3><p>应用提供浅色、深色与六个主题色预设，没有虚构的米色主题。</p></div>
+            <div class="theme-controls"><div class="mark-styles"><button type="button" data-lab-theme="light" aria-pressed="true">浅色</button><button type="button" data-lab-theme="dark" aria-pressed="false">深色</button></div><div class="accent-choices" aria-label="主题色"><button type="button" data-accent-color="#e0520e" aria-label="橙色" aria-pressed="true"></button><button type="button" data-accent-color="#2563eb" aria-label="蓝色" aria-pressed="false"></button><button type="button" data-accent-color="#16a34a" aria-label="绿色" aria-pressed="false"></button><button type="button" data-accent-color="#9333ea" aria-label="紫色" aria-pressed="false"></button><button type="button" data-accent-color="#dc2626" aria-label="红色" aria-pressed="false"></button><button type="button" data-accent-color="#0891b2" aria-label="青色" aria-pressed="false"></button></div></div>
+            <div class="theme-sample" data-theme="light"><span>FocusFeed</span><strong>把注意力还给阅读。</strong><p>主题色只强调需要操作的地方，内容仍然保持安静。</p><span class="theme-sample-action">摘要</span></div>
+            <a class="demo-link" href="#demo" data-demo-select="themes">播放主题晕染录屏 ↗</a>
           </article>
         </div>
-        <p class="lab-disclaimer">这里展示的是可交互界面示例；真实录屏与完整功能请继续向下查看。</p>
       </section>
 
       <section class="reading-story wrap" id="experience" aria-labelledby="story-title">
-        <div class="section-intro story-intro">
-          <h2 id="story-title">文章、书籍与想法，<br />都有地方安放。</h2>
-          <p>真实的 FocusFeed 界面。从宽屏双页到高亮批注，再到按需使用的 AI 工具，内容始终是画面的主角。</p>
-        </div>
+        <div class="section-intro story-intro"><h2 id="story-title">文章、书籍与想法，<br />都有地方安放。</h2><p>真实的 FocusFeed 界面。从宽屏双页到高亮批注，再到按需使用的 AI 工具，内容始终是画面的主角。</p></div>
         <div class="story-grid">
-          <figure class="story-ebook">
-            <img src="/assets/ebook.jpg" alt="FocusFeed 电子书双页阅读界面" width="1919" height="1079" loading="lazy" />
-            <figcaption><strong>双页阅读</strong><span>让长章节也有舒适的节奏</span></figcaption>
-          </figure>
-          <figure class="story-notes">
-            <img src="/assets/annotations.jpg" alt="FocusFeed 的高光笔与批注面板" width="1185" height="667" loading="lazy" />
-            <figcaption><strong>高亮与批注</strong><span>摘录和想法都能导出</span></figcaption>
-          </figure>
-          <figure class="story-ai">
-            <img src="/assets/ai-features.png" alt="FocusFeed 的摘要、深度解读、选中翻译和自定义 AI 设置界面" width="1672" height="941" loading="lazy" />
-            <figcaption><strong>BYOK AI</strong><span>自己的服务，自己的模型，自己的密钥</span></figcaption>
-          </figure>
+          <figure class="story-ebook"><img src="/assets/ebook.jpg" alt="FocusFeed 电子书双页阅读界面" width="1919" height="1079" loading="lazy" /><figcaption><strong>双页阅读</strong><span>让长章节也有舒适的节奏</span></figcaption></figure>
+          <figure class="story-notes"><img src="/assets/annotations.jpg" alt="FocusFeed 的高光笔与批注面板" width="1185" height="667" loading="lazy" /><figcaption><strong>高亮与批注</strong><span>摘录和想法都能导出</span></figcaption></figure>
+          <figure class="story-ai" id="ai"><img src="/assets/ai-features.png" alt="FocusFeed 的摘要、深度解读、选中翻译和自定义 AI 设置界面" width="1672" height="941" loading="lazy" /><figcaption><strong>BYOK AI</strong><span>自己的服务，自己的模型，自己的密钥</span></figcaption></figure>
         </div>
       </section>
 
       <section class="demo-section wrap" id="demo" aria-labelledby="demo-title">
-        <div class="section-intro demo-head">
-          <h2 id="demo-title">看看它如何工作。</h2>
-          <p>这些操作录屏直接来自 FocusFeed。选择一项，播放真实使用过程；方向键也可以切换。</p>
-        </div>
+        <div class="section-intro demo-head"><h2 id="demo-title">完整操作，看真实录屏。</h2><p>不用网页示例代替真实能力。六段录屏来自 FocusFeed，覆盖布局、浮窗、阅读设置、主题、摘要与选中翻译。</p></div>
         <div class="demo-layout">
-          <div class="demo-nav">
-            <div class="demo-caption"><strong id="demo-caption-title">跨屏响应</strong><p id="demo-caption-description">从宽屏到紧凑窗口，阅读布局随空间变化。</p></div>
-            <div class="demo-tabs" role="tablist" aria-label="功能演示">
-              <button type="button" class="demo-tab active" role="tab" aria-selected="true" aria-controls="demo-panel" id="demo-tab-responsive" data-video="responsive" data-title="跨屏响应" data-description="从宽屏到紧凑窗口，阅读布局随空间变化。"><span>01</span>跨屏响应</button>
-              <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-motion" data-video="motion" data-title="流畅动画" data-description="在文章与阅读视图之间自然切换，让操作跟得上思路。"><span>02</span>流畅动画</button>
-              <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-settings" data-video="reading-settings" data-title="阅读设置" data-description="文字、间距与阅读宽度，按你的习惯调整。"><span>03</span>阅读设置</button>
-              <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-themes" data-video="themes" data-title="主题切换" data-description="明暗之间切换，让阅读适应不同环境。"><span>04</span>主题切换</button>
-              <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-ai-summary" data-video="ai-summary" data-title="AI 摘要" data-description="快速提取长文核心，再决定是否深入阅读。"><span>05</span>AI 摘要</button>
-              <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-byok" data-video="byok" data-title="AI 翻译" data-description="通过自己配置的模型，直接在文章中翻译。"><span>06</span>AI 翻译</button>
-            </div>
-          </div>
-          <div class="demo-screen" id="demo-panel" role="tabpanel" aria-labelledby="demo-tab-responsive" tabindex="0">
-            <video id="demo-video" controls playsinline preload="none" poster="/assets/poster-responsive.jpg" aria-label="跨屏响应演示视频">
-              <source src="/videos/responsive.mp4" type="video/mp4" />
-              您的浏览器不支持视频播放。
-            </video>
-          </div>
+          <div class="demo-nav"><div class="demo-caption"><strong id="demo-caption-title">跨屏响应</strong><p id="demo-caption-description">三栏、栏宽、双槽与手机页栈，布局随空间自然切换。</p></div><div class="demo-tabs" role="tablist" aria-label="功能演示">
+            <button type="button" class="demo-tab active" role="tab" aria-selected="true" aria-controls="demo-panel" id="demo-tab-responsive" data-video="responsive" data-title="跨屏响应" data-description="三栏、栏宽、双槽与手机页栈，布局随空间自然切换。"><span>01</span>跨屏响应</button>
+            <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-motion" data-video="motion" data-title="浮窗与动画" data-description="选中翻译浮窗、最小化小球与弹性恢复，完整呈现操作过程。"><span>02</span>浮窗与动画</button>
+            <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-settings" data-video="reading-settings" data-title="阅读设置" data-description="字号、字重、字距、行距与页宽，按真实设置面板调整。"><span>03</span>阅读设置</button>
+            <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-themes" data-video="themes" data-title="主题晕染" data-description="从点击位置扩散的明暗主题切换，而不只是改变卡片颜色。"><span>04</span>主题晕染</button>
+            <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-ai-summary" data-video="ai-summary" data-title="AI 摘要" data-description="工具栏摘要按钮、正文内结果卡与流式内容，位置与真实应用一致。"><span>05</span>AI 摘要</button>
+            <button type="button" class="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-byok" data-video="byok" data-title="选中翻译" data-description="划选正文、打开选中翻译窗口，再查看译文结果。"><span>06</span>选中翻译</button>
+          </div></div>
+          <div class="demo-screen" id="demo-panel" role="tabpanel" aria-labelledby="demo-tab-responsive" tabindex="0"><video id="demo-video" controls playsinline preload="none" poster="/assets/poster-responsive.jpg" aria-label="跨屏响应演示视频"><source src="/videos/responsive.mp4" type="video/mp4" />您的浏览器不支持视频播放。</video></div>
         </div>
       </section>
 
       <section class="service-section wrap" aria-label="RSSHub 服务与官方公告">
-        <div class="service-rsshub">
-          <h2>让更多内容，<br />进入阅读。</h2>
-          <p>使用我们自建的 RSSHub 公共实例，从路由目录选择内容，生成可以直接添加到 FocusFeed 的订阅地址。</p>
-          <a class="primary-link" href="/rsshub.html">生成 RSS 订阅源 <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="service-news">
-          <p>官方公告</p>
-          <h3>FocusFeed 0.2.4 已发布</h3>
-          <span>网页订阅源发现与重复识别已修复，Windows、Android 与 Linux Beta 完整安装包均已更新。</span>
-          <div><a href="/announcements/release-0-2-4.html">阅读版本公告 ↗</a><a href="/announcements/">全部公告</a><a href="https://darastas.github.io/announcements.xml">订阅公告 RSS</a></div>
-        </div>
+        <div class="service-rsshub"><h2>让更多内容，<br />进入阅读。</h2><p>使用我们自建的 RSSHub 公共实例，从路由目录选择内容，生成可以直接添加到 FocusFeed 的订阅地址。</p><a class="primary-link" href="/rsshub.html">生成 RSS 订阅源 <span aria-hidden="true">↗</span></a></div>
+        <div class="service-news"><p>官方公告</p><h3>FocusFeed 0.2.4 已发布</h3><span>网页订阅源发现与重复识别已修复，Windows、Android 与 Linux Beta 完整安装包均已更新。</span><div><a href="/announcements/release-0-2-4.html">阅读版本公告 ↗</a><a href="/announcements/">全部公告</a><a href="https://darastas.github.io/announcements.xml">订阅公告 RSS</a></div></div>
       </section>
 
       <section class="download-section" id="download" aria-labelledby="download-title">
         <div class="wrap">
-          <div class="download-header">
-            <span class="section-number">支持三端</span>
-            <h2 id="download-title">开始阅读。</h2>
-            <p>Windows、Android 与 Linux Beta 提供 0.2.4 安装包，修复网页地址订阅失败：粘贴首页或文章链接后，自动查找网站提供的 RSS、Atom 或 JSON Feed。请安装完整新版以获得此修复。<a href="/announcements/release-0-2-4.html">查看版本说明 ↗</a> 安装包由 Cloudflare 提供下载。</p>
-          </div>
+          <div class="download-header"><span class="section-number">支持三端</span><h2 id="download-title">开始阅读。</h2><p>Windows、Android 与 Linux Beta 提供 0.2.4 安装包，修复网页地址订阅失败：粘贴首页或文章链接后，自动查找网站提供的 RSS、Atom 或 JSON Feed。请安装完整新版以获得此修复。<a href="/announcements/release-0-2-4.html">查看版本说明 ↗</a> 安装包由 Cloudflare 提供下载。</p></div>
           <div class="download-list">
-            <article class="download-item" data-platform="windows" data-version="0.2.4">
-              <div><span class="download-system">WINDOWS · X64</span><h3>安装版</h3><p>Windows 0.2.4 · 标准安装程序 · 10.7 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_x64-setup.exe?rev=C2E62050936ACF99">下载 EXE <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="C2E62050936ACF990747F880B9D5E794CDBC0476F12F6F89F349D35BDC1F6DF5" aria-label="复制 Windows 安装版 SHA-256">SHA-256 <span>C2E62050…</span></button>
-            </article>
-            <article class="download-item" data-platform="windows" data-version="0.2.4">
-              <div><span class="download-system">WINDOWS · X64</span><h3>便携版</h3><p>Windows 0.2.4 · 独立运行文件 · 36.1 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4.exe?rev=ACA078CBC2BD1935">下载 EXE <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="ACA078CBC2BD193556E875D67830022E1D3384115B7B4CEBF250CC5ADDEB2815" aria-label="复制 Windows 便携版 SHA-256">SHA-256 <span>ACA078CB…</span></button>
-            </article>
-            <article class="download-item" data-platform="android" data-version="0.2.4">
-              <div><span class="download-system">ANDROID · ARM64</span><h3>安卓版</h3><p>Android 0.2.4 · APK · 45.4 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4_arm64.apk?rev=BB2AE2A865D74536">下载 APK <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="BB2AE2A865D74536DE303F6F7DB6523B3F92079AE46B81A5EC31BE0C7C93EA37" aria-label="复制 Android 版 SHA-256">SHA-256 <span>BB2AE2A8…</span></button>
-            </article>
-            <article class="download-item">
-              <div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.4 Beta · DEB</h3><p>Linux Mint / Ubuntu / Debian · 16.7 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_amd64.deb?rev=cddf83eb8128504b">下载 DEB <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="cddf83eb8128504b08e9c9e8307f0460ab1a05f1b1ddef932ba477d0a8e6c247" aria-label="复制 Linux Beta DEB SHA-256">SHA-256 <span>cddf83eb…</span></button>
-            </article>
-            <article class="download-item">
-              <div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.4 Beta · RPM</h3><p>Fedora / 支持 RPM 的发行版 · 16.7 MiB</p></div>
-              <a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.2.4-1.x86_64.rpm?rev=24f6c3ae3a5f8cd2">下载 RPM <span aria-hidden="true">↗</span></a>
-              <button class="hash-button" type="button" data-hash="24f6c3ae3a5f8cd2df659fa0c44e9f26b8dc124d176af2f5a53527c5d9c4a3bb" aria-label="复制 Linux Beta RPM SHA-256">SHA-256 <span>24f6c3ae…</span></button>
-            </article>
+            <article class="download-item" data-platform="windows" data-version="0.2.4"><div><span class="download-system">WINDOWS · X64</span><h3>安装版</h3><p>Windows 0.2.4 · 标准安装程序 · 10.7 MiB</p></div><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_x64-setup.exe?rev=C2E62050936ACF99">下载 EXE <span aria-hidden="true">↗</span></a><button class="hash-button" type="button" data-hash="C2E62050936ACF990747F880B9D5E794CDBC0476F12F6F89F349D35BDC1F6DF5" aria-label="复制 Windows 安装版 SHA-256">SHA-256 <span>C2E62050…</span></button></article>
+            <article class="download-item" data-platform="windows" data-version="0.2.4"><div><span class="download-system">WINDOWS · X64</span><h3>便携版</h3><p>Windows 0.2.4 · 独立运行文件 · 36.1 MiB</p></div><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4.exe?rev=ACA078CBC2BD1935">下载 EXE <span aria-hidden="true">↗</span></a><button class="hash-button" type="button" data-hash="ACA078CBC2BD193556E875D67830022E1D3384115B7B4CEBF250CC5ADDEB2815" aria-label="复制 Windows 便携版 SHA-256">SHA-256 <span>ACA078CB…</span></button></article>
+            <article class="download-item" data-platform="android" data-version="0.2.4"><div><span class="download-system">ANDROID · ARM64</span><h3>安卓版</h3><p>Android 0.2.4 · APK · 45.4 MiB</p></div><a href="https://focusfeed-site.pages.dev/download/FocusFeed_v0.2.4_arm64.apk?rev=BB2AE2A865D74536">下载 APK <span aria-hidden="true">↗</span></a><button class="hash-button" type="button" data-hash="BB2AE2A865D74536DE303F6F7DB6523B3F92079AE46B81A5EC31BE0C7C93EA37" aria-label="复制 Android 版 SHA-256">SHA-256 <span>BB2AE2A8…</span></button></article>
+            <article class="download-item"><div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.4 Beta · DEB</h3><p>Linux Mint / Ubuntu / Debian · 16.7 MiB</p></div><a href="https://focusfeed-site.pages.dev/download/FocusFeed_0.2.4_amd64.deb?rev=cddf83eb8128504b">下载 DEB <span aria-hidden="true">↗</span></a><button class="hash-button" type="button" data-hash="cddf83eb8128504b08e9c9e8307f0460ab1a05f1b1ddef932ba477d0a8e6c247" aria-label="复制 Linux Beta DEB SHA-256">SHA-256 <span>cddf83eb…</span></button></article>
+            <article class="download-item"><div><span class="download-system">LINUX · X86_64 · BETA</span><h3>Linux 0.2.4 Beta · RPM</h3><p>Fedora / 支持 RPM 的发行版 · 16.7 MiB</p></div><a href="https://focusfeed-site.pages.dev/download/FocusFeed-0.2.4-1.x86_64.rpm?rev=24f6c3ae3a5f8cd2">下载 RPM <span aria-hidden="true">↗</span></a><button class="hash-button" type="button" data-hash="24f6c3ae3a5f8cd2df659fa0c44e9f26b8dc124d176af2f5a53527c5d9c4a3bb" aria-label="复制 Linux Beta RPM SHA-256">SHA-256 <span>24f6c3ae…</span></button></article>
           </div>
           <!-- linux-install:start -->
           <section class="linux-install" aria-labelledby="linux-install-title">
@@ -313,13 +244,9 @@ sudo dnf install './FocusFeed-0.2.4-1.x86_64.rpm'</code></pre>
       </section>
     </main>
 
-    <footer class="site-footer wrap">
-      <div class="footer-brand"><img src="/favicon.svg" alt="" width="28" height="28" /><span>FocusFeed</span></div>
-      <p>把注意力还给阅读。</p>
-      <nav aria-label="页脚导航"><a href="/rsshub.html">生成 RSS</a><a href="/announcements/">公告</a><a href="#top">返回顶部 ↑</a></nav>
-    </footer>
+    <footer class="site-footer wrap"><div class="footer-brand"><img src="/favicon.svg" alt="" width="28" height="28" /><span>FocusFeed</span></div><p>把注意力还给阅读。</p><nav aria-label="页脚导航"><a href="/rsshub.html">生成 RSS</a><a href="/announcements/">公告</a><a href="#top">返回顶部 ↑</a></nav></footer>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script type="module" src="/main.js?v=20261026-2"></script>
+    <script type="module" src="/main.js?v=20261026-4"></script>
     <script type="module" src="/navigation.js"></script>
   </body>
 </html>
